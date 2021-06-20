@@ -17,6 +17,6 @@ Event OnItemAdded(Form akBaseItem, int aiItemCount, ObjectReference akItemRefere
 		coin.value += coin.mult * count
 		count = coin.value as int
 		coin.value -= count
-		ref.addItem(coin, count, true)
+		ref.addItem(Gold001, count, true)
 	endIf
 EndEvent
