@@ -7,32 +7,20 @@ C.O.I.N. will add seven new types of coins to your game at varying rarities and 
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Features.png)
 
--   Seven new coins to find on your travels: Ancient Falmer Auris, Dwarven Dumacs, Atmoran Drakr, Ancient Nord Haralds, Medes, Sancar, and Ulfrics!
--   Each coin is distributed in places that make sense:
-**Ancient Falmer Auri -**
+- Seven new coins to find on your travels: Ancient Falmer Auris, Dwarven Dumacs, Atmoran Drakr, Ancient Nord Haralds, Medes, Sancar, and Ulfrics!
+- Each coin is distributed in places that make sense:  
+    Ancient Falmer Auri - Forgotten Vale  
+    Atmoran Drakr - Dragon Cult ruins  
+    Dwarven Dumac - Dwarven Ruins  
+    Ancient Nord Harald - Ancient Nord Ruins  
+    Mede - Emperor's Quarters of the Katariah  
+    Sancar - Thalmor Embassy, Thalmor HQ, and Northwatch Keep  
+    Ulfric - Windhelm Blacksmith and the Palace of the Kings  
+- Proper leveled list integration to ensure the coins show up in containers and on enemies in addition to being found loose in the world.
 
-**\
-Atmoran Drakr**
+__**Coinage Value**__
 
-**\
-Dwarven Dumac**
-
-**\
-Ancient Nord Harald**
-
-**\
-Mede**
-
-**\
-Sancar**
-
-**\
-Ulfric**
-
--   Proper leveled list integration to ensure the coins show up in containers and on enemies in addition to being found loose in the world.\
-**Coinage Value
-
-**I have not altered the rate or amount at which coins are dropped, but I have edited the value that each coin is worth. Upon picking up one of the new coins it will be automatically turned into the coin's value in Septims. Ancient coins will not be worth much as they are little more than trinkets to the citizens of Tamriel, however minted coinage will be worth as much, if not more, than the Imperial Septim. For example, the Dominion Sancar is more powerful than the Septim and is worth 1.25 Septims.
+I have not altered the rate or amount at which coins are dropped, but I have edited the value that each coin is worth. Upon picking up one of the new coins it will be automatically turned into the coin's value in Septims. Ancient coins will not be worth much as they are little more than trinkets to the citizens of Tamriel, however minted coinage will be worth as much, if not more, than the Imperial Septim. For example, the Dominion Sancar is more powerful than the Septim and is worth 1.25 Septims.
 
 You can see the complete list of values below:
 
@@ -47,15 +35,15 @@ You can see the complete list of values below:
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Credits.png)
 
-**Special Thanks
+__**Special Thanks**__
 
-VictorF** for helping with scripting and a lot of the big-picture design.\
-Klamactus for designing the Ancient Falmer Auri for me.
+**VictorF** for helping with scripting and a lot of the big-picture design.\
+**Klamactus** for designing the Ancient Falmer Auri for me.
 
-**Assets Used\
-****\
+__**Assets Used**__
+
 **arsthetiu** for the Sancar taken from [Aldmeri Dominion Coin - Modder's Resource](https://www.nexusmods.com/skyrimspecialedition/mods/47218)﻿.\
-****BerndR** for the Atmoran Drakr taken from [Coin Resource](https://www.nexusmods.com/skyrimspecialedition/mods/22196).\
+**BerndR** for the Atmoran Drakr taken from [Coin Resource](https://www.nexusmods.com/skyrimspecialedition/mods/22196).\
 **InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
 **invock** for the front face of the Medes taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
 **SpiderAkiraCfor** the back face of the Medes take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
