@@ -37,7 +37,7 @@ You can see the complete list of values below:
 
 __**Special Thanks**__
 
-**VictorF** for helping with scripting and a lot of the big-picture design.\
+**VictorF** for working on the mod's scripting and contributing a lot of the big-picture design.\
 **Klamactus** for designing the Ancient Falmer Auri for me.
 
 __**Assets Used**__
