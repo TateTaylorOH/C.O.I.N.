@@ -44,6 +44,7 @@ __**Assets Used**__
 
 **arsthetiu** for the Sancar taken from [Aldmeri Dominion Coin - Modder's Resource](https://www.nexusmods.com/skyrimspecialedition/mods/47218)﻿.\
 **BerndR** for the Atmoran Drakr taken from [Coin Resource](https://www.nexusmods.com/skyrimspecialedition/mods/22196).\
+DanielCoffey for the Imperial and Stormcloak notes taken from [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901).\
 **InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
 **invock** for the front face of the Medes taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
 **SpiderAkiraCfor** the back face of the Medes take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
