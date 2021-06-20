@@ -1,4 +1,3 @@
-\
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/C.O.I.N.png)\
 [![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/Xbox%20Tiny.png)](https://bethesda.net/en/mods/skyrim/mod-detail/4198330)﻿ Also available on [Xbox One](https://bethesda.net/en/mods/skyrim/mod-detail/4198330)﻿.
 
