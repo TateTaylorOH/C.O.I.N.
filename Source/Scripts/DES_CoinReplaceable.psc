@@ -3,4 +3,3 @@ Scriptname DES_CoinReplaceable extends MiscObject
 
 float property mult = 1.0 auto
 {the number of gold pieces this coin is worth. default 1.}
-float property value = 0.0 auto hidden
