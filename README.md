@@ -1,5 +1,5 @@
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/C.O.I.N.png)\
-[![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/Xbox%20Tiny.png)](https://bethesda.net/en/mods/skyrim/mod-detail/4198330)﻿ Also available on [Xbox One](https://bethesda.net/en/mods/skyrim/mod-detail/4198330)﻿.
+[![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/Xbox%20Tiny.png)](https://bethesda.net/en/mods/skyrim/mod-detail/4220943)﻿ Also available on [Xbox One](https://bethesda.net/en/mods/skyrim/mod-detail/4220943)﻿.
 
 I have long been a fan of mods that add new coins to the game. The fact that you can find Septims deep in Dwemer ruins or Draugr crypts that have not been touched in hundreds, if not thousands, of years has always bugged me. However, none of the current offerings gave me quite what I wanted. I have been planning this mod on-and-off for nearly a year and a half, figuring out exactly what I want to do with it and gaining the proper permissions in order to release it in a form that I would be happy with, I am really happy to see it finally released.
 
