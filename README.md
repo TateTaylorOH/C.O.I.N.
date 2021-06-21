@@ -48,4 +48,4 @@ DanielCoffey for the Imperial and Stormcloak notes taken from [Book Covers Skyri
 **InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
 **invock** for the front face of the Medes taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
 **SpiderAkiraCfor** the back face of the Medes take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
-**TheDamned** for letting me use their Ancient Nord Harald and Ulfric from **Skyrim Coin Replacer**.
+**TheDamned** for letting me use their Ancient Nord Harald and Ulfric from [Skyrim Coin Replacer](https://web.archive.org/web/20131210095057/http://www.nexusmods.com/skyrim/mods/8611/).
