@@ -35,17 +35,17 @@ You can see the complete list of values below:
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Credits.png)
 
-**Special Thanks
+**Special Thanks**
 
-VictorF** for working on the mod's scripting and contributing a lot of the big-picture design.\
+**VictorF** for working on the mod's scripting and contributing a lot of the big-picture design.\
 **Klamactus** for designing the Ancient Falmer Auri for me.\
 **KaptainCnucklz**for making the [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094) patch.\
 **Xanza** for making literally every other patch.
 
-**Assets Used\
-****\
-**arsthetiu**** for the Sancar taken from **[Aldmeri Dominion Coin - Modder's Resource](https://www.nexusmods.com/skyrimspecialedition/mods/47218)﻿.\
-****BerndR** for the Atmoran Drakr taken from [Coin Resource](https://www.nexusmods.com/skyrimspecialedition/mods/22196).\
+**Assets Used**
+
+**arsthetiu** for the Sancar taken from [Aldmeri Dominion Coin - Modder's Resource](https://www.nexusmods.com/skyrimspecialedition/mods/47218)﻿.\
+**BerndR** for the Atmoran Drakr taken from [Coin Resource](https://www.nexusmods.com/skyrimspecialedition/mods/22196).\
 **DanielCoffey** for the Ulfric coin and Imperial and Stormcloak notes taken from [Skyrim Coin Replacer Redux](https://www.nexusmods.com/skyrim/mods/48195/) ﻿and [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901) respectively.\
 **InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
 **invock** for the front face of the Medes taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
