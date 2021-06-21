@@ -38,7 +38,9 @@ You can see the complete list of values below:
 __**Special Thanks**__
 
 **VictorF** for working on the mod's scripting and contributing a lot of the big-picture design.\
-**Klamactus** for designing the Ancient Falmer Auri for me.
+**Klamactus** for designing the Ancient Falmer Auri for me.\
+**KaptainCnucklz**for making the [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094)﻿ patch.\
+**Xanza** for making literally every other patch.
 
 __**Assets Used**__
 
