@@ -47,7 +47,7 @@ You can see the complete list of values below:
 **arsthetiu** for the Sancar taken from [Aldmeri Dominion Coin - Modder's Resource](https://www.nexusmods.com/skyrimspecialedition/mods/47218)﻿.\
 **DanielCoffey** for the Ulfric coin and Imperial and Stormcloak notes taken from [Skyrim Coin Replacer Redux](https://www.nexusmods.com/skyrim/mods/48195/) ﻿and [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901) respectively.\
 **InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
-**invock** for the front face of the Medes taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
-**SpiderAkiraCfor** the back face of the Medes take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
+**invock** for the front face of the Mede taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
+**SpiderAkiraCfor** the back face of the Mede take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
 **Square** for the Atmoran Drakr taken from [Beyond Skyrim - Wares of Tamriel](https://www.nexusmods.com/skyrimspecialedition/mods/31519).\
 **TheDamned** for the Ancient Nord Harald taken from **[Skyrim Coin Replacer](https://web.archive.org/web/20131210095057/http://www.nexusmods.com/skyrim/mods/8611/)**.
