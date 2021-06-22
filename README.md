@@ -33,6 +33,26 @@ You can see the complete list of values below:
 **Sancar** - 1.25 Septims\
 **Ulfric** - 0.80 Septim
 
+![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)
+
+Patches for the following mods are provided in our installer:
+
+-   [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924)﻿
+-   [Expanded Towns and Cities (SSE)](https://www.nexusmods.com/skyrimspecialedition/mods/13552)﻿
+-   [Legacy of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/11802)﻿ (no new displays)
+-   [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094)﻿
+-   [Morrowloot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)﻿
+
+-   [Unofficial Skyrim Special Edition Patch](https://www.nexusmods.com/skyrimspecialedition/mods/266/)﻿
+-   [Ustengrav - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33878)
+
+-   [Weapons Armor Clothing and Clutter Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/18994?)﻿
+-   [Wintersun - Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/22506)
+
+Patches for the following mods are provided via a third-party patch:
+
+-   [Open World Loot - Encounter Zone and Loot Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/51489/)
+
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Credits.png)
 
 **Special Thanks**
