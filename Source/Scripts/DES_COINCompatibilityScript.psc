@@ -1,20 +1,18 @@
-Scriptname DES_COINCompatibilityInjectionScript extends Quest  
+Scriptname DES_COINCompatibilityScript extends Quest  
 
 ;-- Propeties ---------------------------------------
 
-MiscItem Property myCoin  Auto
+MiscObject Property myCoin  Auto
 
 ;-- Variables ---------------------------------------
 
 ;-- Functions ---------------------------------------
 
 Function COINCompatibilityInjection()
-;Debug.Notification("IntCOINCompatibilityInjection has fired!")
-FormList DES_NonGoldCoins = Game.GetForm(01DE5002) As FormList
-    if (DES_NonGoldCoins && !DES_NonGoldCoins.hasForm(myCoin))
-		DES_NonGoldCoins.AddForm(myCoin)
-		;Debug.Notification("myCoin has been added to the formlist!")
-    endif
+;Debug.Notification("COINCompatibilityInjection has fired!")
+FormList DES_NonGoldCoins = Game.GetForm(0x1DE5002) As FormList
+	DES_NonGoldCoins.AddForm(myCoin)
+	;Debug.Notification("myCoin has been added to the formlist!")
 EndFunction
 
 Event OnInit()
