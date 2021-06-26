@@ -24,14 +24,7 @@ I have not altered the rate or amount at which coins are dropped, but I have edi
 
 You can see the complete list of values below:
 
-**Septim** - 1 Septim\
-**Ancient Falmer Auri** - 0.60 Septim\
-**Atmoran Drakr** - 0.15 Septim\
-**Dwarven Dumac** - 0.20 Septim\
-**Ancient Nord Harald** - 0.20 Septim\
-**Mede** - 0.80 Septim\
-**Sancar** - 1.25 Septims\
-**Ulfric** - 0.80 Septim
+![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/coin/images/Coin%20Chart.PNG)
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)
 
