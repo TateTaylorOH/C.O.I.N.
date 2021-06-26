@@ -2,6 +2,7 @@
 
 The following assets are not part of my work and **need permission from the respective authors** (listed in the credits) in order to be used:
 
+- Ancient Falmer Auri
 - Ancient Nord Halrad
 - Atmoran Drakr
 - Ulfric
