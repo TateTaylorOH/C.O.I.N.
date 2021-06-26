@@ -59,7 +59,10 @@ Patches for the following mods are provided via a third-party patch:
 
 **VictorF** for working on the mod's scripting and contributing a lot of the big-picture design.\
 **Klamactus** for designing the Ancient Falmer Auri for me.\
+**IconicDeath** for providing me with several upscaled textures for the coins.\
 **KaptainCnucklz** for making the [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094) patch.\
+**ra2phoenix** for making the [Cutting Room Floor](https://www.nexusmods.com/skyrimspecialedition/mods/276/)﻿ and [Radiance - Radiant Quest Enchancements - Locations](https://www.nexusmods.com/skyrimspecialedition/mods/45419)﻿ patches.\
+**Avenger94** for making the [Dynamic Dungeon Loot (DDL) - Random Loot System](https://www.nexusmods.com/skyrimspecialedition/mods/10308/)﻿ and [Lock Related Loot](https://www.nexusmods.com/skyrimspecialedition/mods/11342/)﻿ patches.\
 **Xanza** for making literally every other patch.
 
 **Assets Used**
@@ -68,6 +71,7 @@ Patches for the following mods are provided via a third-party patch:
 **DanielCoffey** for the Ulfric coin and Imperial and Stormcloak notes taken from [Skyrim Coin Replacer Redux](https://www.nexusmods.com/skyrim/mods/48195/) ﻿and [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901) respectively.\
 **InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
 **invock** for the front face of the Mede taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
+**pet9948** for some textures used on the Ancient Falmer Auri taken from [Immersive Currency](https://lastrium.com/index.php?/files/file/9-immersive-currency-gold-and-silver-coins/)﻿.\
 **SpiderAkiraCfor** the back face of the Mede take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
 **Square** for the Atmoran Drakr taken from [Beyond Skyrim - Wares of Tamriel](https://www.nexusmods.com/skyrimspecialedition/mods/31519).\
 **TheDamned** for the Ancient Nord Harald taken from **[Skyrim Coin Replacer](https://web.archive.org/web/20131210095057/http://www.nexusmods.com/skyrim/mods/8611/)**.
