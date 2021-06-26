@@ -35,25 +35,37 @@ You can see the complete list of values below:
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)
 
+C.O.I.N. makes edits to several dungeons in order to distribute the new coinage. These edits are very minor and only replace the vanilla gold coins that were already there. However, due to how load order works, it is recommended you load C.O.I.N. above other mods that may also edit these cells, notably lighting overhauls like [Relighting Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/8586) and [Enhanced Lights and FX](https://www.nexusmods.com/skyrimspecialedition/mods/2424).
+
 Patches for the following mods are provided in our installer:
 
 -   [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924)﻿
+-   [Cutting Room Floor](https://www.nexusmods.com/skyrimspecialedition/mods/276/)﻿
+-   [Dynamic Dungeon Loot (DDL) - Random Loot System](https://www.nexusmods.com/skyrimspecialedition/mods/10308/)﻿
 -   [Expanded Towns and Cities (SSE)](https://www.nexusmods.com/skyrimspecialedition/mods/13552)﻿
 -   [Legacy of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/11802)﻿ (no new displays)
+-   [Lock Related Loot](https://www.nexusmods.com/skyrimspecialedition/mods/11342/)﻿
 -   [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094)﻿
 -   [Morrowloot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)﻿
+-   [Radiance - Radiant Quest Enchancements - Locations](https://www.nexusmods.com/skyrimspecialedition/mods/45419)﻿
 
 -   [Unofficial Skyrim Special Edition Patch](https://www.nexusmods.com/skyrimspecialedition/mods/266/)﻿
--   [Ustengrav - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33878)
-
--   [Weapons Armor Clothing and Clutter Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/18994?)﻿
+-   [Ustengrav - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33878)﻿
+-   [Weapons Armor Clothing and Clutter Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/18994)﻿﻿
 -   [Wintersun - Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/22506)
 
 Patches for the following mods are provided via a third-party patch:
 
 -   [Open World Loot - Encounter Zone and Loot Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/51489/)
 
-![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Credits.png)
+The following mods are fully compatible out-of-the-box:
+
+-   [JS Purses and Septims SE](https://www.nexusmods.com/skyrimspecialedition/mods/37306)﻿
+-   [Septim - a coin retexture](https://www.nexusmods.com/skyrimspecialedition/mods/24465)﻿
+-   [Septim HD](https://www.nexusmods.com/skyrimspecialedition/mods/22170)﻿
+-   Any other retexture of Vanilla gold
+
+If you want to add C.O.I.N. support to your own mod without need of a patch, you can find an article detailing how [here](https://www.nexusmods.com/skyrimspecialedition/articles/3150).
 
 **Special Thanks**
 
