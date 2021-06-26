@@ -60,7 +60,7 @@ The following mods are fully compatible out-of-the-box:
 
 If you want to add C.O.I.N. support to your own mod without need of a patch, you can find an article detailing how [here](https://www.nexusmods.com/skyrimspecialedition/articles/3150).
 
-**Special Thanks**
+__**Special Thanks**__
 
 **VictorF** for working on the mod's scripting and contributing a lot of the big-picture design.\
 **Klamactus** for designing the Ancient Falmer Auri for me.\
@@ -70,7 +70,7 @@ If you want to add C.O.I.N. support to your own mod without need of a patch, you
 **Avenger94** for making the [Dynamic Dungeon Loot (DDL) - Random Loot System](https://www.nexusmods.com/skyrimspecialedition/mods/10308/)﻿ and [Lock Related Loot](https://www.nexusmods.com/skyrimspecialedition/mods/11342/)﻿ patches.\
 **Xanza** for making literally every other patch.
 
-**Assets Used**
+__**Assets Used**__
 
 **arsthetiu** for the Sancar taken from [Aldmeri Dominion Coin - Modder's Resource](https://www.nexusmods.com/skyrimspecialedition/mods/47218)﻿.\
 **DanielCoffey** for the Ulfric coin and Imperial and Stormcloak notes taken from [Skyrim Coin Replacer Redux](https://www.nexusmods.com/skyrim/mods/48195/) ﻿and [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901) respectively.\
