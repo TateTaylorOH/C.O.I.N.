@@ -26,6 +26,8 @@ You can see the complete list of values below:
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/coin/images/Coin%20Chart.PNG)
 
+If you would prefer the newly added coins to be misc items, you can disable the mod's auto-conversion feature via the FOMOD installer. However, it is **highly recommended that you do not do this**. Conversion is the big thing that makes this mod work as intended, without it you will be unable to benefit from our economy changes and the majority of misc coins you find in the world will be worth 0 gold to merchants.
+
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)
 
 C.O.I.N. makes edits to several dungeons in order to distribute the new coinage. These edits are very minor and only replace the vanilla gold coins that were already there. However, due to how load order works, it is recommended you load C.O.I.N. above other mods that may also edit these cells, notably lighting overhauls like [Relighting Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/8586) and [Enhanced Lights and FX](https://www.nexusmods.com/skyrimspecialedition/mods/2424).
