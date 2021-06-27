@@ -2,10 +2,14 @@
 
 The following assets are not part of my work and **need permission from the respective authors** (listed in the credits) in order to be used:
 
-- Ancient Falmer Auri
-- Ancient Nord Halrad
+- Ancient Nord Harald
 - Atmoran Drakr
 - Ulfric
+
+- Pet9948's Ancient Falmer Auri
+- Pet9948's Ancient Nord Drakr
+- Pet9948's Dwarven Dumac
+- Pet9948's Sancar
 
 The following assets are not part of my work, but **are open source and can be freely used**:
 
