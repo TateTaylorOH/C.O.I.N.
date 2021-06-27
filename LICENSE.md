@@ -5,7 +5,6 @@ The following assets are not part of my work and **need permission from the resp
 - Ancient Nord Harald
 - Atmoran Drakr
 - Ulfric
-
 - Pet9948's Ancient Falmer Auri
 - Pet9948's Ancient Nord Drakr
 - Pet9948's Dwarven Dumac
