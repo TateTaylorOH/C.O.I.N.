@@ -41,7 +41,6 @@ Patches for the following mods are provided in our installer:
 -   [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094)﻿
 -   [Morrowloot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)﻿
 -   [Radiance - Radiant Quest Enchancements - Locations](https://www.nexusmods.com/skyrimspecialedition/mods/45419)﻿
-
 -   [Unofficial Skyrim Special Edition Patch](https://www.nexusmods.com/skyrimspecialedition/mods/266/)﻿
 -   [Ustengrav - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33878)﻿
 -   [Weapons Armor Clothing and Clutter Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/18994)﻿﻿
