@@ -41,7 +41,6 @@ Patches for the following mods are provided in our installer:
 -   [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094)﻿
 -   [Morrowloot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)﻿
 -   [Radiance - Radiant Quest Enchancements - Locations](https://www.nexusmods.com/skyrimspecialedition/mods/45419)﻿
-
 -   [Unofficial Skyrim Special Edition Patch](https://www.nexusmods.com/skyrimspecialedition/mods/266/)﻿
 -   [Ustengrav - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33878)﻿
 -   [Weapons Armor Clothing and Clutter Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/18994)﻿﻿
@@ -76,7 +75,7 @@ __**Assets Used**__
 **DanielCoffey** for the Ulfric coin and Imperial and Stormcloak notes taken from [Skyrim Coin Replacer Redux](https://www.nexusmods.com/skyrim/mods/48195/) ﻿and [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901) respectively.\
 **InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
 **invock** for the front face of the Mede taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
-**pet9948** for some textures used on the Ancient Falmer Auri taken from [Immersive Currency](https://lastrium.com/index.php?/files/file/9-immersive-currency-gold-and-silver-coins/)﻿.\
+**Pet9948** for some textures used on the Ancient Falmer Auri as well as a whole host of optional assets taken from [Immersive Currency](https://lastrium.com/index.php?/files/file/9-immersive-currency-gold-and-silver-coins/)﻿.\
 **SpiderAkiraCfor** the back face of the Mede take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
 **Square** for the Atmoran Drakr taken from [Beyond Skyrim - Wares of Tamriel](https://www.nexusmods.com/skyrimspecialedition/mods/31519).\
 **TheDamned** for the Ancient Nord Harald taken from **[Skyrim Coin Replacer](https://web.archive.org/web/20131210095057/http://www.nexusmods.com/skyrim/mods/8611/)**.
