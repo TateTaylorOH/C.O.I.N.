@@ -34,6 +34,7 @@ C.O.I.N. makes edits to several dungeons in order to distribute the new coinage.
 
 Patches for the following mods are provided in our installer:
 
+-   [Ancient Nord Armo(u)ry EXTREME](https://www.nexusmods.com/skyrimspecialedition/mods/41265)
 -   [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924)﻿
 -   [Cutting Room Floor](https://www.nexusmods.com/skyrimspecialedition/mods/276/)﻿
 -   [Dynamic Dungeon Loot (DDL) - Random Loot System](https://www.nexusmods.com/skyrimspecialedition/mods/10308/)﻿
