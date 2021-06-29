@@ -35,6 +35,7 @@ C.O.I.N. makes edits to several dungeons in order to distribute the new coinage.
 Patches for the following mods are provided in our installer:
 
 -   [Ancient Nord Armo(u)ry EXTREME](https://www.nexusmods.com/skyrimspecialedition/mods/41265)
+-   [Bleak Falls Barrow - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33251)
 -   [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924)﻿
 -   [Cutting Room Floor](https://www.nexusmods.com/skyrimspecialedition/mods/276/)﻿
 -   [Dynamic Dungeon Loot (DDL) - Random Loot System](https://www.nexusmods.com/skyrimspecialedition/mods/10308/)﻿
@@ -44,6 +45,7 @@ Patches for the following mods are provided in our installer:
 -   [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094)﻿
 -   [Morrowloot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)﻿
 -   [Radiance - Radiant Quest Enchancements - Locations](https://www.nexusmods.com/skyrimspecialedition/mods/45419)﻿
+-   [The Tools of Kagrenac](https://www.nexusmods.com/skyrimspecialedition/mods/14168)
 -   [Unofficial Skyrim Special Edition Patch](https://www.nexusmods.com/skyrimspecialedition/mods/266/)﻿
 -   [Ustengrav - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33878)﻿
 -   [Weapons Armor Clothing and Clutter Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/18994)﻿﻿
@@ -67,18 +69,20 @@ __**Special Thanks**__
 **VictorF** for working on the mod's scripting and contributing a lot of the big-picture design.\
 **Klamactus** for designing the Ancient Falmer Auri for me.\
 **IconicDeath** for providing me with several upscaled textures for the coins.\
-**KaptainCnucklz** for making the [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094) patch.\
-**ra2phoenix** for making the [Cutting Room Floor](https://www.nexusmods.com/skyrimspecialedition/mods/276/)﻿ and [Radiance - Radiant Quest Enchancements - Locations](https://www.nexusmods.com/skyrimspecialedition/mods/45419)﻿ patches.\
 **Avenger94** for making the [Dynamic Dungeon Loot (DDL) - Random Loot System](https://www.nexusmods.com/skyrimspecialedition/mods/10308/)﻿ and [Lock Related Loot](https://www.nexusmods.com/skyrimspecialedition/mods/11342/)﻿ patches.\
+**ra2phoenix** for making the [Cutting Room Floor](https://www.nexusmods.com/skyrimspecialedition/mods/276/)﻿ and [Radiance - Radiant Quest Enchancements - Locations](https://www.nexusmods.com/skyrimspecialedition/mods/45419)﻿ patches.\
+**KaptainCnucklz** for making the [Morrowloot Miscellania](https://www.nexusmods.com/skyrimspecialedition/mods/27094) patch.\
+**TitansBane** for making the [Tools of Kagrenac](https://www.nexusmods.com/skyrimspecialedition/mods/14168) and [Bleak Falls Barrow - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33251) patches.\
 **Xanza** for making literally every other patch.
 
 __**Assets Used**__
 
 **arsthetiu** for the Sancar taken from [Aldmeri Dominion Coin - Modder's Resource](https://www.nexusmods.com/skyrimspecialedition/mods/47218)﻿.\
 **DanielCoffey** for the Ulfric coin and Imperial and Stormcloak notes taken from [Skyrim Coin Replacer Redux](https://www.nexusmods.com/skyrim/mods/48195/) ﻿and [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901) respectively.\
-**InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿.\
+**InsanitySorrow** for the Dwarven Dumac taken from [Insanitys Dwemer Coin](https://www.nexusmods.com/skyrim/mods/33812)﻿ as well as and several other optional assets.\
 **invock** for the front face of the Mede taken from [Medes In Your Pockets - A currency and economy Super-Patch](https://www.nexusmods.com/skyrimspecialedition/mods/26097).\
-**Pet9948** for some textures used on the Ancient Falmer Auri as well as a whole host of optional assets taken from [Immersive Currency](https://lastrium.com/index.php?/files/file/9-immersive-currency-gold-and-silver-coins/)﻿.\
-**SpiderAkiraCfor** the back face of the Mede take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
+**Pet9948** for some textures used on the Ancient Falmer Auri and several optional assets taken from [Immersive Currency](https://lastrium.com/index.php?/files/file/9-immersive-currency-gold-and-silver-coins/).\
+**SpiderAkiraCfor** for the back face of the Mede take from [Coin Resource](https://www.nexusmods.com/skyrim/mods/45063)﻿.\
 **Square** for the Atmoran Drakr taken from [Beyond Skyrim - Wares of Tamriel](https://www.nexusmods.com/skyrimspecialedition/mods/31519).\
-**TheDamned** for the Ancient Nord Harald taken from **[Skyrim Coin Replacer](https://web.archive.org/web/20131210095057/http://www.nexusmods.com/skyrim/mods/8611/)**.
+**TheDamned** for the Ancient Nord Harald and several optional assets taken from **[Skyrim Coin Replacer](https://web.archive.org/web/20131210095057/http://www.nexusmods.com/skyrim/mods/8611/)**.\
+**WiZkiD** for the optional Dumac asset.
