@@ -5,10 +5,9 @@ The following assets are not part of my work and **need permission from the resp
 - Ancient Nord Harald
 - Atmoran Drakr
 - Ulfric
-- Pet9948's Ancient Falmer Auri
-- Pet9948's Ancient Nord Drakr
-- Pet9948's Dwarven Dumac
-- Pet9948's Sancar
+- Pet9948's Optional Coin Assets
+- TheDamned's Optional Coin Assets
+- WiZkiD's Optional Coin Assets
 
 The following assets are not part of my work, but **are open source and can be freely used**:
 
@@ -16,3 +15,4 @@ The following assets are not part of my work, but **are open source and can be f
 - Mede 
 - Sancar
 - Imperial and Stormcloak notes 
+- InsanitySorrow's Optional Coin Assets
