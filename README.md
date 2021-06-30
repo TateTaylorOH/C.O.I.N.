@@ -5,6 +5,8 @@ I have long been a fan of mods that add new coins to the game. The fact that you
 
 C.O.I.N. will add seven new types of coins to your game at varying rarities and placed in locations that are logical and make sense within the world of the Elder Scrolls. You will never find Septims on Draugr ever again!
 
+However, that is only half of what C.O.I.N. has to offer! This mod is also a lightweight economy overhaul. The new coins you find around the world will generally be worth less than a normal gold coin. This makes it so it is substantially harder to get rich quick off of a few dungeons. Now gaining wealth will be a much more interesting obstacle as you progress through your playthrough!
+
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Features.png)
 
 - Seven new coins to find on your travels: Ancient Falmer Auri, Dwarven Dumacs, Atmoran Drakr, Ancient Nord Haralds, Medes, Sancar, and Ulfrics!
@@ -20,7 +22,7 @@ C.O.I.N. will add seven new types of coins to your game at varying rarities and 
 
 __**Coinage Value**__
 
-I have not altered the rate or amount at which coins are dropped, but I have edited the value that each coin is worth. Upon picking up one of the new coins it will be automatically turned into the coin's value in Septims. Ancient coins will not be worth much as they are little more than trinkets to the citizens of Tamriel, however minted coinage will be worth as much, if not more, than the Imperial Septim. For example, the Dominion Sancar is more powerful than the Septim and is worth 1.25 Septims.
+I have not altered the rate or amount at which coins are dropped, but I have edited the value that each coin is worth. Upon picking up one of the new coins it will be automatically turned into the coin's value in Septims. Ancient coins will not be worth much as they are little more than trinkets to the citizens of Tamriel, however minted coinage will be worth as much, if not more, than the Imperial Septim. For example, the Dominion Sancar is more powerful than the Septim and is worth 1.25 gold coins.
 
 You can see the complete list of values below:
 
