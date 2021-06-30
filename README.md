@@ -9,10 +9,10 @@ C.O.I.N. will add seven new types of coins to your game at varying rarities and 
 
 - Seven new coins to find on your travels: Ancient Falmer Auri, Dwarven Dumacs, Atmoran Drakr, Ancient Nord Haralds, Medes, Sancar, and Ulfrics!
 - Each coin is distributed in places that make sense:  
-    - **Ancient Falmer Auri** - Forgotten Vale  
-    - **Atmoran Drakr** - Dragon Cult ruins  
-    - **Dwarven Dumac** - Dwarven Ruins  
-    - **Ancient Nord Harald** - Ancient Nord Ruins  
+    - **Auri** - Forgotten Vale  
+    - **Drakr** - Dragon Cult ruins  
+    - **Dumac** - Dwarven Ruins  
+    - **Harald** - Ancient Nord Ruins  
     - **Mede** - Emperor's Quarters of the Katariah  
     - **Sancar** - Thalmor Embassy, Thalmor HQ, and Northwatch Keep  
     - **Ulfric** - Windhelm Blacksmith and the Palace of the Kings  
