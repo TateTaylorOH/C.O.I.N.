@@ -38,6 +38,7 @@ Patches for the following mods are provided in our installer:
 -   [Bleak Falls Barrow - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/33251)
 -   [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924)﻿
 -   [Cutting Room Floor](https://www.nexusmods.com/skyrimspecialedition/mods/276/)﻿
+-   [Dungeons - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/51798)﻿
 -   [Dynamic Dungeon Loot (DDL) - Random Loot System](https://www.nexusmods.com/skyrimspecialedition/mods/10308/)﻿
 -   [Expanded Towns and Cities (SSE)](https://www.nexusmods.com/skyrimspecialedition/mods/13552)﻿
 -   [Legacy of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/11802)﻿ (no new displays)
