@@ -1,4 +1,6 @@
-## Special Thanks
+![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Credits.png)
+
+### Special Thanks
 
 VictorF for working on the mod's scripting and contributing a lot of the big-picture design.
 
@@ -16,7 +18,7 @@ TitansBane for making the Tools of Kagrenac and Bleak Falls Barrow - Revisited p
 
 Xanza for making literally every other patch.
 
-## Assets Used
+### Assets Used
 
 arsthetiu for the Sancar taken from Aldmeri Dominion Coin - Modder's Resource﻿.
 
