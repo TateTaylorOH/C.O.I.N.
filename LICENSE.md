@@ -11,7 +11,7 @@ The following assets are not part of my work and **need permission from the resp
 
 The following assets are not part of my work, but **are open source and can be freely used**:
 
-- Dwarven Dumac
+- Dwarven Kthucinach
 - Mede 
 - Sancar
 - Imperial and Stormcloak notes 
