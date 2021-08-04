@@ -16,3 +16,5 @@ The following assets are not part of my work, but **are open source and can be f
 - Sancar
 - Imperial and Stormcloak notes 
 - InsanitySorrow's Optional Coin Assets
+
+*Any assets not specifically listed here should be considered part of my work and, therefore, open source.*
