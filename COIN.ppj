@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<PapyrusProject
+  xmlns="PapyrusProject.xsd"
+  Game="sse"
+  Flags="TESV_Papyrus_Flags.flg"
+  Output="Scripts"
+  Optimize="false" Anonymize="true" Package="false" Zip="false">
+  <Variables>
+    <Variable Name="modname" Value="COIN"/>
+    <Variable Name="filename" Value="C.O.I.N"/>
+	<Variable Name="version" Value="0.0.1"/>
+	<Variable Name="skyrimPath" Value="C:/Games/Steam/steamapps/common/Skyrim Special Edition/Data"/>
+	<Variable Name="modsPath" Value="C:/Games/Tools/MO2/profiles/Skyrim Special Edition/mods"/>
+    <Variable Name="tempPath" Value="temp"/>
+	<Variable Name="sourcePath" Value="Source/Scripts"/>
+	<Variable Name="altSourcePath" Value="Scripts/Source"/>
+	<Variable Name="projectPath" Value="@modsPath/@modname"/>
+  </Variables>
+  <Imports>
+    <Import>@sourcePath</Import>
+    <Import>@skyrimPath/@sourcePath</Import>
+  </Imports>
+  <Folders>
+    <Folder NoRecurse="true">@sourcePath</Folder>
+  </Folders>
+  <Packages Output="archives">
+	<Package Name="@filename" RootDir="@projectPath">
+		<Match In="Meshes">*.nif</Match>
+		<Match In="Scripts">*.pex</Match>
+		<Match In="Textures">*.dds</Match>
+	</Package>
+  </Packages>
+  <ZipFiles Output="archives">
+	  <ZipFile Name="@modname-@version" RootDir="@projectPath">
+			<Include>@filename.esp</Include>
+			<Include>archives/@filename.bsa</Include>
+			<Include Path="@sourcePath">*.psc</Include>
+			<!-- <Include Path="MCM/config">MCM/config</Include> -->
+	  </ZipFile>
+  </ZipFiles>
+</PapyrusProject>
