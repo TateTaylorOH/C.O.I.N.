@@ -5,7 +5,7 @@ bool property ready auto hidden
 
 MiscObject[] otherCoins
 float[] coinMults
-int maxIndex
+int nextIndex
 
 Event OnInit()
 	ready = false
@@ -16,7 +16,7 @@ function resetCoins()
 	ready = false
 	otherCoins = new MiscObject[128]
 	coinMults = new float[128]
-	maxIndex = 0
+	nextIndex = 0
 	PlayerAlias.removeAllInventoryEventFilters()
 	ready = true
 endFunction
@@ -37,9 +37,9 @@ float function setCoinValue(MiscObject coin, float value)
 		int i = otherCoins.find(coin)
 		float oldValue = 0.0
 		if(i < 0)
-			otherCoins[maxIndex] = coin
-			coinMults[maxIndex] = value
-			maxIndex += 1
+			otherCoins[nextIndex] = coin
+			coinMults[nextIndex] = value
+			nextIndex += 1
 			PlayerAlias.addInventoryEventFilter(coin)
 			return oldValue
 		endIf
@@ -75,8 +75,16 @@ bool function removeCoinExchange(MiscObject coin)
 			endIf
 			i += 1
 		endWhile
-		maxIndex = lastCoinIndex
+		nextIndex = lastCoinIndex + 1
 		return true
 	endIf
 	return false
+endFunction
+
+MiscObject function getCoin(int i)
+	return otherCoins[i]
+endFunction
+
+int function getNumCoins()
+	return nextIndex
 endFunction

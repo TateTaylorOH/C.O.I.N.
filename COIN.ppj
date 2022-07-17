@@ -19,6 +19,7 @@
   <Imports>
     <Import>@sourcePath</Import>
     <Import>@skyrimPath/@sourcePath</Import>
+	<Import>@modsPath/SkyUI/@sourcePath</Import>
   </Imports>
   <Folders>
     <Folder NoRecurse="true">@sourcePath</Folder>
