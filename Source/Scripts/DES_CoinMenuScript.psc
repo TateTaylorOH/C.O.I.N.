@@ -181,6 +181,25 @@ Event OnPageReset(string page)
 	endIf
 endEvent
 
+Event OnConfigClose()
+	int i = 0
+	int n = coinForms.length
+	while(i < n)
+		Form f = coinForms[i]
+		MiscObject coin = f as MiscObject
+		float value = coinValues[i]
+		if(coin)
+			CoinData.setCoinValue(coin, value)
+		elseif(!f)
+			CoinData.setCoinValue(DES_DrakrDragon, value)
+			CoinData.setCoinValue(DES_DrakrMoth, value)
+			CoinData.setCoinValue(DES_DrakrOwl, value)
+			CoinData.setCoinValue(DES_DrakrWhale, value)
+		endIf
+		i += 1
+	endWhile
+endEvent
+
 state toggleAutoExchange
 	Event OnHighlightST()
 		setInfoText(autoExchangeInfo)
