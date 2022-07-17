@@ -33,13 +33,7 @@ MiscObject Property DES_Ulfric Auto
 float UlfricValue
 float defaultUlfricValue  = 0.8
 
-string autoExchangeState = "toggleAutoExchange"
-string autoExchangeLabel = "Automatically Exchange Coins"
-string autoExchangeInfo = "If enabled, coins will automatically be exchanged for septims. This is recommended."
 bool autoExchangeDefault = true
-string verboseState = "toggleVerboseExchange"
-string verboseLabel = "Show Septim Added Notifications"
-string verboseInfo = "If enabled, shows notifications when coins are exchanged for septims. This is not recommended."
 bool verboseDefault = false
 
 Form[] coinForms
@@ -50,7 +44,6 @@ int coinsMaxIndex
 string[] coinStates
 
 float maxCoinValue
-string valueFormat = "{2} septims"
 
 Event OnConfigInit()
 	initializeMCM()
@@ -61,8 +54,8 @@ endEvent
 function initializeMCM()
 	ModName = "C.O.I.N."
 	Pages = new string[2]
-	Pages[0] = "Settings"
-	Pages[1] = "Coins"
+	Pages[0] = "$COIN_LABEL_SETTINGS"
+	Pages[1] = "$COIN_LABEL_VALUES"
 	coinsMaxIndex = -1
 endFunction
 
@@ -110,8 +103,8 @@ function buildSettingsPage()
 	bool autoExchange = CoinData.PlayerAlias.autoExchange
 	bool verbose = CoinData.PlayerAlias.verbose
 	int verboseFlags = OPTION_FLAG_DISABLED * ((!autoExchange) as int)
-	AddToggleOptionST(autoExchangeState, autoExchangeLabel, autoExchange)
-	AddToggleOptionST(verboseState, verboseLabel, verbose, verboseFlags)
+	AddToggleOptionST("toggleAutoExchange", "$COIN_LABEL_AUTOEXCHANGE", autoExchange)
+	AddToggleOptionST("toggleVerboseExchange", "$COIN_LABEL_VERBOSE", verbose, verboseFlags)
 endFunction
 
 int function addCoinsListEntry(MiscObject coin, float value = -1.0, string name = "")
@@ -165,9 +158,9 @@ function buildCoinsPage()
 	int numCoins = coinNames.length
 	while(i < numCoins)
 		if(i < numDefaultCoins)
-			AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], valueFormat)
+			AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
 		else; non default coins are handled by index instead of name
-			AddSliderOption(coinNames[i], coinValues[i], valueFormat)
+			AddSliderOption(coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
 		endIf
 		i += 1
 	endWhile
@@ -202,26 +195,26 @@ endEvent
 
 state toggleAutoExchange
 	Event OnHighlightST()
-		setInfoText(autoExchangeInfo)
+		setInfoText("$COIN_INFO_AUTOEXCHANGE")
 	endEvent
 	Event OnDefaultST()
 		CoinData.PlayerAlias.autoExchange = autoExchangeDefault
 		SetToggleOptionValueST(autoExchangeDefault, true)
 		int verboseFlags = OPTION_FLAG_DISABLED * ((!autoExchangeDefault) as int)
-		SetOptionFlagsST(verboseFlags, false, verboseState)
+		SetOptionFlagsST(verboseFlags, false, "toggleVerboseExchange")
 	endEvent
 	Event OnSelectST()
 		bool autoExchange = !CoinData.PlayerAlias.autoExchange
 		CoinData.PlayerAlias.autoExchange = autoExchange
 		SetToggleOptionValueST(autoExchange, true)
 		int verboseFlags = OPTION_FLAG_DISABLED * ((!autoExchange) as int)
-		SetOptionFlagsST(verboseFlags, false, verboseState)
+		SetOptionFlagsST(verboseFlags, false, "toggleVerboseExchange")
 	endEvent
 endState
 
 state toggleVerboseExchange
 	Event OnHighlightST()
-		setInfoText(verboseInfo)
+		setInfoText("$COIN_INFO_VERBOSE")
 	endEvent
 	Event OnDefaultST()
 		CoinData.PlayerAlias.verbose = verboseDefault
@@ -250,7 +243,7 @@ state Auri
 	Event OnSliderAcceptST(float value)
 		AuriValue = value
 		coinValues[0] = value
-		SetSliderOptionValueST(value, valueFormat)
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
@@ -270,7 +263,7 @@ state Drakr
 	Event OnSliderAcceptST(float value)
 		DrakrValue = value
 		coinValues[1] = value
-		SetSliderOptionValueST(value, valueFormat)
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
@@ -290,7 +283,7 @@ state Harald
 	Event OnSliderAcceptST(float value)
 		HaraldValue = value
 		coinValues[2] = value
-		SetSliderOptionValueST(value, valueFormat)
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
@@ -310,7 +303,7 @@ state Mede
 	Event OnSliderAcceptST(float value)
 		MedeValue = value
 		coinValues[3] = value
-		SetSliderOptionValueST(value, valueFormat)
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
@@ -330,7 +323,7 @@ state Nchuark
 	Event OnSliderAcceptST(float value)
 		NchuarkValue = value
 		coinValues[4] = value
-		SetSliderOptionValueST(value, valueFormat)
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
@@ -350,7 +343,7 @@ state Sancar
 	Event OnSliderAcceptST(float value)
 		SancarValue = value
 		coinValues[5] = value
-		SetSliderOptionValueST(value, valueFormat)
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
@@ -370,7 +363,7 @@ state Ulfric
 	Event OnSliderAcceptST(float value)
 		UlfricValue = value
 		coinValues[6] = value
-		SetSliderOptionValueST(value, valueFormat)
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
@@ -386,7 +379,7 @@ endEvent
 Event OnOptionSliderAccept(int option, float value)
 	int index = option/2
 	coinValues[index] = value
-	SetSliderOptionValue(option, value, valueFormat)
+	SetSliderOptionValue(option, value, "$COIN_FORMAT_VALUE")
 endEvent
 
 state TemplateStateCloneMe
