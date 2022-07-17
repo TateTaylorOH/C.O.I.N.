@@ -46,6 +46,7 @@ string[] coinStates
 float maxCoinValue
 
 Event OnConfigInit()
+	utility.wait(2.0)
 	initializeMCM()
 	initializeSettingDefaults()
 	initializeNewCoins()
