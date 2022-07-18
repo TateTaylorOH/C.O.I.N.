@@ -1,42 +1,120 @@
 <?xml version="1.0"?>
 <PapyrusProject
-  xmlns="PapyrusProject.xsd"
-  Game="sse"
-  Flags="TESV_Papyrus_Flags.flg"
-  Output="Scripts"
-  Optimize="false" Anonymize="true" Package="false" Zip="false">
-  <Variables>
-    <Variable Name="modname" Value="COIN"/>
-    <Variable Name="filename" Value="C.O.I.N"/>
-	<Variable Name="version" Value="0.0.1"/>
-	<Variable Name="skyrimPath" Value="C:/Games/Steam/steamapps/common/Skyrim Special Edition/Data"/>
-	<Variable Name="modsPath" Value="C:/Games/Tools/MO2/profiles/Skyrim Special Edition/mods"/>
-    <Variable Name="tempPath" Value="temp"/>
-	<Variable Name="sourcePath" Value="Source/Scripts"/>
-	<Variable Name="altSourcePath" Value="Scripts/Source"/>
-	<Variable Name="projectPath" Value="@modsPath/@modname"/>
-  </Variables>
-  <Imports>
-    <Import>@sourcePath</Import>
-    <Import>@skyrimPath/@sourcePath</Import>
-	<Import>@modsPath/SkyUI/@sourcePath</Import>
-  </Imports>
-  <Folders>
-    <Folder NoRecurse="true">@sourcePath</Folder>
-  </Folders>
-  <Packages Output="archives">
-	<Package Name="@filename" RootDir="@projectPath">
-		<Match In="Meshes">*.nif</Match>
-		<Match In="Scripts">*.pex</Match>
-		<Match In="Textures">*.dds</Match>
-	</Package>
-  </Packages>
-  <ZipFiles Output="archives">
-	  <ZipFile Name="@modname-@version" RootDir="@projectPath">
+	xmlns="PapyrusProject.xsd"
+	Game="sse"
+	Flags="TESV_Papyrus_Flags.flg"
+	Output="Scripts"
+	Optimize="false" Anonymize="true" Package="true" Zip="true">
+	<Variables>
+		<Variable Name="modname" Value="COIN"/>
+		<Variable Name="filename" Value="C.O.I.N"/>
+		<Variable Name="version" Value="2.0.0"/>
+		<Variable Name="skyrimPath" Value="C:/Games/Steam/steamapps/common/Skyrim Special Edition/Data"/>
+		<Variable Name="modsPath" Value="C:/Games/Tools/MO2/profiles/Skyrim Special Edition/mods"/>
+		<Variable Name="tempPath" Value="temp"/>
+		<Variable Name="sourcePath" Value="Source/Scripts"/>
+		<Variable Name="altSourcePath" Value="Scripts/Source"/>
+		<Variable Name="projectPath" Value="@modsPath/@modname"/>
+		<Variable Name="FOPT" Value="fomod/Optionals"/>
+		<Variable Name="ALT" Value="Optionals/Alternative Assets"/>
+		<Variable Name="MPATH" Value="Meshes/COIN"/>
+		<Variable Name="TPATH" Value="Textures/COIN"/>
+		<Variable Name="Auri1" Value="@ALT/Auri/InsanitySorrow"/>
+		<Variable Name="Auri2" Value="@ALT/Auri/Pet9948"/>
+		<Variable Name="Drakr1" Value="@ALT/Drakr/Pet9948/Drakr A"/>
+		<Variable Name="Drakr2" Value="@ALT/Drakr/Pet9948/Drakr B"/>
+		<Variable Name="Dumac1" Value="@ALT/Dumac/Pet9948/Dumac A"/>
+		<Variable Name="Dumac2" Value="@ALT/Dumac/Pet9948/Dumac B"/>
+		<Variable Name="Dumac3" Value="@ALT/Dumac/Pet9948/Dumac C"/>
+		<Variable Name="Dumac4" Value="@ALT/Dumac/TheDamned"/>
+		<Variable Name="Dumac5" Value="@ALT/Dumac/WiZkiD"/>
+		<Variable Name="Harald1" Value="@ALT/Harald/InsanitySorrow"/>
+		<Variable Name="Harald2" Value="@ALT/Harald/Pet9948/Harald A"/>
+		<Variable Name="Harald3" Value="@ALT/Harald/Pet9948/Harald B"/>
+		<Variable Name="Sancar" Value="@ALT/Sancar/Pet9948"/>
+	</Variables>
+	<Imports>
+		<Import>@sourcePath</Import>
+		<Import>@skyrimPath/@sourcePath</Import>
+		<Import>@modsPath/SkyUI/@sourcePath</Import>
+	</Imports>
+	<Folders>
+		<Folder NoRecurse="true">@sourcePath</Folder>
+	</Folders>
+	<Packages Output="archives">
+		<Package Name="@filename" RootDir="@projectPath">
+			<Match In="Interface">*.txt</Match>
+			<Match In="Meshes">*.nif</Match>
+			<Match In="Scripts">*.pex</Match>
+			<Match In="Textures">*.dds</Match>
+		</Package>
+	</Packages>
+	<ZipFiles Output="archives">
+		<ZipFile Name="@modname-@version" RootDir="@projectPath">
 			<Include>@filename.esp</Include>
 			<Include>archives/@filename.bsa</Include>
-			<Include Path="@sourcePath">*.psc</Include>
+			<Match NoRecurse="true" In="@sourcePath" Path="@sourcePath">*.*</Match>
 			<!-- <Include Path="MCM/config">MCM/config</Include> -->
-	  </ZipFile>
-  </ZipFiles>
+		</ZipFile>
+		<ZipFile Name="@modname-FOMOD-@version" RootDir="@projectPath">
+			<Include>@filename.esp</Include>
+			<Include>archives/@filename.bsa</Include>
+			<Match NoRecurse="true" In="@sourcePath" Path="@sourcePath">*.*</Match>
+			<Match NoRecurse="true" In="source/textures" Path="source/textures">*.*</Match>
+			<Match NoRecurse="true" In="fomod" Path="fomod">*.*</Match>
+			<Match NoRecurse="true" In="@FOPT/Auri" Path="@FOPT/Auri">*.*</Match>
+			<Match NoRecurse="true" In="@FOPT/Drakr" Path="@FOPT/Drakr">*.*</Match>
+			<Match NoRecurse="true" In="@FOPT/Dumac" Path="@FOPT/Dumac">*.*</Match>
+			<Match NoRecurse="true" In="@FOPT/Harald" Path="@FOPT/Harald">*.*</Match>
+			<Match NoRecurse="true" In="@FOPT/Sancar" Path="@FOPT/Sancar">*.*</Match>
+			<Match NoRecurse="true" In="Patches/ANAE" Path="Patches/ANAE">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Bruma" Path="Patches/Bruma">*.*</Match>
+			<Match NoRecurse="true" In="Patches/CACO" Path="Patches/CACO">*.*</Match>
+			<Match NoRecurse="true" In="Patches/CRF" Path="Patches/CRF">*.*</Match>
+			<Match NoRecurse="true" In="Patches/DDL" Path="Patches/DDL">*.*</Match>
+			<Match NoRecurse="true" In="Patches/ETaC/Riverwood" Path="Patches/ETaC/Riverwood">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Lock Related Loot" Path="Patches/Lock Related Loot">*.*</Match>
+			<Match NoRecurse="true" In="Patches/LOTD" Path="Patches/LOTD">*.*</Match>
+			<Match NoRecurse="true" In="Patches/LOTD/CACO" Path="Patches/LOTD/CACO">*.*</Match>
+			<Match NoRecurse="true" In="Patches/LOTD/MLU" Path="Patches/LOTD/MLU">*.*</Match>
+			<Match NoRecurse="true" In="Patches/LOTD/USSEP" Path="Patches/LOTD/USSEP">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Morrowloot/Morrowloot Miscellania" Path="Patches/Morrowloot/Morrowloot Miscellania">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Morrowloot/Morrowloot Ultimate" Path="Patches/Morrowloot/Morrowloot Ultimate">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Radiance" Path="Patches/Radiance">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Revisited" Path="Patches/Revisited">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Revisited/Bleak Falls Barrow" Path="Patches/Revisited/Bleak Falls Barrow">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Revisited/Ustengrav" Path="Patches/Revisited/Ustengrav">*.*</Match>
+			<Match NoRecurse="true" In="Patches/ToK" Path="Patches/ToK">*.*</Match>
+			<Match NoRecurse="true" In="Patches/USSEP" Path="Patches/USSEP">*.*</Match>
+			<Match NoRecurse="true" In="Patches/WACCF" Path="Patches/WACCF">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Wintersun" Path="Patches/Wintersun">*.*</Match>
+			<Match NoRecurse="true" In="Patches/Wyrmstooth" Path="Patches/Wyrmstooth">*.*</Match>
+			<Match NoRecurse="true" In="@Auri1/@MPATH" Path="@Auri1/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Auri1/@TPATH" Path="@Auri1/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Auri2/@MPATH" Path="@Auri2/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Auri2/@TPATH" Path="@Auri2/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Drakr1/@MPATH/atmora" Path="@Drakr1/@MPATH/atmora">*.*</Match>
+			<Match NoRecurse="true" In="@Drakr1/@TPATH" Path="@Drakr1/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Drakr2/@MPATH/atmora" Path="@Drakr2/@MPATH/atmora">*.*</Match>
+			<Match NoRecurse="true" In="@Drakr2/@TPATH" Path="@Drakr2/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac1/@MPATH" Path="@Dumac1/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac1/@TPATH" Path="@Dumac1/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac2/@MPATH" Path="@Dumac2/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac2/@TPATH" Path="@Dumac2/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac3/@MPATH" Path="@Dumac3/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac3/@TPATH" Path="@Dumac3/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac4/@MPATH" Path="@Dumac4/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac4/@TPATH" Path="@Dumac4/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac5/@MPATH" Path="@Dumac5/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Dumac5/@TPATH" Path="@Dumac5/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Harald1/@MPATH" Path="@Harald1/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Harald1/@TPATH" Path="@Harald1/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Harald2/@MPATH" Path="@Harald2/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Harald2/@TPATH" Path="@Harald2/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Harald3/@MPATH" Path="@Harald3/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Harald3/@TPATH" Path="@Harald3/@TPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Sancar/@MPATH" Path="@Sancar/@MPATH">*.*</Match>
+			<Match NoRecurse="true" In="@Sancar/@TPATH" Path="@Sancar/@TPATH">*.*</Match>
+		</ZipFile>
+	</ZipFiles>
 </PapyrusProject>
