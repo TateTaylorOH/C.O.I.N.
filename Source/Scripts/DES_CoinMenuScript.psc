@@ -6,6 +6,7 @@ DES_DefaultCoins Property Defaults Auto
 float defaultAuriValue = 0.6
 float defaultDrakrValue = 0.15
 float defaultHaraldValue = 0.2
+float defaultMallariValue = 0.6
 float defaultMedeValue = 0.8
 float defaultNchuarkValue = 0.2
 float defaultSancarValue = 1.25
@@ -50,6 +51,7 @@ function initializeNewCoins()
 	Defaults.AuriValue    = defaultAuriValue
 	Defaults.DrakrValue   = defaultDrakrValue
 	Defaults.HaraldValue  = defaultHaraldValue
+	Defaults.MallariValue = defaultMallariValue
 	Defaults.MedeValue    = defaultMedeValue
 	Defaults.NchuarkValue = defaultNchuarkValue
 	Defaults.SancarValue  = defaultSancarValue
@@ -58,14 +60,15 @@ function initializeNewCoins()
 		utility.wait(0.1)
 	endWhile
 	Defaults.setDefaultCoinValues()
-	coinStates = new String[7]
+	coinStates = new String[8]
 	coinStates[0] = "Auri"
 	coinStates[1] = "Drakr"
 	coinStates[2] = "Harald"
-	coinStates[3] = "Mede"
-	coinStates[4] = "Nchuark"
-	coinStates[5] = "Sancar"
-	coinStates[6] = "Ulfric"
+	coinStates[3] = "Mallari"
+	coinStates[4] = "Mede"
+	coinStates[5] = "Nchuark"
+	coinStates[6] = "Sancar"
+	coinStates[7] = "Ulfric"
 endFunction
 
 function buildSettingsPage()
@@ -101,6 +104,7 @@ int function buildCoinsList()
 	addCoinsListEntry(Defaults.DES_Auri,    Defaults.AuriValue)
 	addCoinsListEntry(None,                 Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
 	addCoinsListEntry(Defaults.DES_Harald,  Defaults.HaraldValue)
+	addCoinsListEntry(Defaults.DES_Mallari, Defaults.MallariValue)
 	addCoinsListEntry(Defaults.DES_Mede,    Defaults.MedeValue)
 	addCoinsListEntry(Defaults.DES_Nchuark, Defaults.NchuarkValue)
 	addCoinsListEntry(Defaults.DES_Sancar,  Defaults.SancarValue)
@@ -251,6 +255,26 @@ state Harald
 	endEvent
 endState
 
+state Mallari
+	Event OnHighlightST()
+		;setInfoText(MallariInfoText)
+	endEvent
+	Event OnDefaultST()
+		Defaults.MallariValue = defaultMallariValue
+	endEvent
+	Event OnSliderOpenST()
+		SetSliderDialogStartValue(Defaults.MallariValue)
+		SetSliderDialogDefaultValue(Defaults.MallariValue)
+		SetSliderDialogRange(0.0, maxCoinValue)
+		SetSliderDialogInterval(0.05)
+	endEvent
+	Event OnSliderAcceptST(float value)
+		Defaults.MallariValue = value
+		coinValues[3] = value
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
+	endEvent
+endState
+
 state Mede
 	Event OnHighlightST()
 		;setInfoText(MedeInfoText)
@@ -266,7 +290,7 @@ state Mede
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.MedeValue = value
-		coinValues[3] = value
+		coinValues[4] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -286,7 +310,7 @@ state Nchuark
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.NchuarkValue = value
-		coinValues[4] = value
+		coinValues[5] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -306,7 +330,7 @@ state Sancar
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.SancarValue = value
-		coinValues[5] = value
+		coinValues[6] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -326,7 +350,7 @@ state Ulfric
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.UlfricValue = value
-		coinValues[6] = value
+		coinValues[7] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -346,29 +370,29 @@ Event OnOptionSliderAccept(int option, float value)
 	SetSliderOptionValue(option, value, "$COIN_FORMAT_VALUE")
 endEvent
 
-state TemplateStateCloneMe
-	Event onHighlightST() ; text, toggles, sliders, menus, colors, keymaps, inputs
-	endEvent
-	Event onDefaultST() ; text, toggles, sliders, menus, colors, keymaps, inputs
-	endEvent
-	Event onSelectST() ; text, toggles
-	endEvent
-	Event onSliderOpenST() ; sliders
-	endEvent
-	Event onSliderAcceptST(float value) ; sliders
-	endEvent
-	Event onMenuOpenST() ; menus
-	endEvent
-	Event onMenuAcceptST(int index) ; menus
-	endEvent
-	Event onColorOpenST() ; colors
-	endEvent
-	Event onColorAcceptST(int color) ; colors
-	endEvent
-	Event onKeyMapChangeST(int keyCode, string conflictControl, string conflictName) ; keymaps
-	endEvent
-	Event onInputOpenST() ; inputs
-	endEvent
-	Event onInputAcceptST(string value) ; inputs
-	endEvent
-endState
+;state TemplateStateCloneMe
+;	Event onHighlightST() ; text, toggles, sliders, menus, colors, keymaps, inputs
+;	endEvent
+;	Event onDefaultST() ; text, toggles, sliders, menus, colors, keymaps, inputs
+;	endEvent
+;	Event onSelectST() ; text, toggles
+;	endEvent
+;	Event onSliderOpenST() ; sliders
+;	endEvent
+;	Event onSliderAcceptST(float value) ; sliders
+;	endEvent
+;	Event onMenuOpenST() ; menus
+;	endEvent
+;	Event onMenuAcceptST(int index) ; menus
+;	endEvent
+;	Event onColorOpenST() ; colors
+;	endEvent
+;	Event onColorAcceptST(int color) ; colors
+;	endEvent
+;	Event onKeyMapChangeST(int keyCode, string conflictControl, string conflictName) ; keymaps
+;	endEvent
+;	Event onInputOpenST() ; inputs
+;	endEvent
+;	Event onInputAcceptST(string value) ; inputs
+;	endEvent
+;endState
