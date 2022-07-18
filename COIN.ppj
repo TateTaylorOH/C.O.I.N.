@@ -10,7 +10,7 @@
 		<Variable Name="filename" Value="C.O.I.N"/>
 		<Variable Name="version" Value="2.0.0"/>
 		<Variable Name="skyrimPath" Value="C:/Games/Steam/steamapps/common/Skyrim Special Edition/Data"/>
-		<Variable Name="modsPath" Value="C:/Games/Tools/MO2/profiles/Skyrim Special Edition/mods"/>
+		<Variable Name="modsPath" Value="C:/Games/Mod Organizer 2/Skyrim SE Development/mods"/>
 		<Variable Name="tempPath" Value="temp"/>
 		<Variable Name="sourcePath" Value="Source/Scripts"/>
 		<Variable Name="altSourcePath" Value="Scripts/Source"/>
