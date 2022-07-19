@@ -3,14 +3,13 @@ Scriptname DES_CoinMenuScript extends SKI_ConfigBase
 DES_CoinManager Property CoinData Auto
 DES_DefaultCoins Property Defaults Auto
 
-float defaultAuriValue = 0.6
-float defaultDrakrValue = 0.15
-float defaultHaraldValue = 0.2
-float defaultMallariValue = 0.6
-float defaultMedeValue = 0.8
-float defaultNchuarkValue = 0.2
-float defaultSancarValue = 1.25
-float defaultUlfricValue  = 0.8
+float defaultMallariValue   = 0.6
+float defaultDrakrValue     = 0.15
+float defaultMalaValue      = 0.4
+float defaultNchuarkValue   = 0.25
+float defaultMedeValue      = 0.8
+float defaultSancarValue    = 1.25
+float defaultUlfricValue    = 0.8
 
 bool autoExchangeDefault = true
 bool verboseDefault = false
@@ -48,27 +47,25 @@ function initializeSettingDefaults()
 endFunction
 
 function initializeNewCoins()
-	Defaults.AuriValue    = defaultAuriValue
-	Defaults.DrakrValue   = defaultDrakrValue
-	Defaults.HaraldValue  = defaultHaraldValue
-	Defaults.MallariValue = defaultMallariValue
-	Defaults.MedeValue    = defaultMedeValue
-	Defaults.NchuarkValue = defaultNchuarkValue
-	Defaults.SancarValue  = defaultSancarValue
-	Defaults.UlfricValue  = defaultUlfricValue
+	Defaults.MallariValue    = defaultMallariValue
+	Defaults.DrakrValue      = defaultDrakrValue
+	Defaults.MalaValue       = defaultMalaValue
+	Defaults.NchuarkValue    = defaultNchuarkValue
+	Defaults.MedeValue       = defaultMedeValue
+	Defaults.SancarValue     = defaultSancarValue
+	Defaults.UlfricValue     = defaultUlfricValue
 	while (!CoinData.ready)
 		utility.wait(0.1)
 	endWhile
 	Defaults.setDefaultCoinValues()
-	coinStates = new String[8]
-	coinStates[0] = "Auri"
+	coinStates = new String[7]
+	coinStates[0] = "Mallari"
 	coinStates[1] = "Drakr"
-	coinStates[2] = "Harald"
-	coinStates[3] = "Mallari"
+	coinStates[2] = "Mala"
+	coinStates[3] = "Nchuark"
 	coinStates[4] = "Mede"
-	coinStates[5] = "Nchuark"
-	coinStates[6] = "Sancar"
-	coinStates[7] = "Ulfric"
+	coinStates[5] = "Sancar"
+	coinStates[6] = "Ulfric"
 endFunction
 
 function buildSettingsPage()
@@ -95,20 +92,19 @@ int function addCoinsListEntry(MiscObject coin, float value = -1.0, string name 
 endFunction
 
 int function buildCoinsList()
-	int numDrakrAlts = 3 ; 4 drakrs share one entry
+	int numDrakrAlts = 4 ; 5 drakrs share one entry
 	currentIndex = 0
 	int numCoins = CoinData.getNumCoins() - numDrakrAlts
 	coinForms = Utility.createFormArray(numCoins)
 	coinNames = Utility.createStringArray(numCoins)
 	coinValues = Utility.createFloatArray(numCoins)
-	addCoinsListEntry(Defaults.DES_Auri,    Defaults.AuriValue)
-	addCoinsListEntry(None,                 Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
-	addCoinsListEntry(Defaults.DES_Harald,  Defaults.HaraldValue)
-	addCoinsListEntry(Defaults.DES_Mallari, Defaults.MallariValue)
-	addCoinsListEntry(Defaults.DES_Mede,    Defaults.MedeValue)
-	addCoinsListEntry(Defaults.DES_Nchuark, Defaults.NchuarkValue)
-	addCoinsListEntry(Defaults.DES_Sancar,  Defaults.SancarValue)
-	addCoinsListEntry(Defaults.DES_Ulfric,  Defaults.UlfricValue)
+	addCoinsListEntry(Defaults.DES_Mallari,    Defaults.MallariValue)
+	addCoinsListEntry(None,                    Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
+	addCoinsListEntry(Defaults.DES_Mala,       Defaults.MalaValue)
+	addCoinsListEntry(Defaults.DES_Nchuark,    Defaults.NchuarkValue)
+	addCoinsListEntry(Defaults.DES_Mede,       Defaults.MedeValue)
+	addCoinsListEntry(Defaults.DES_Sancar,     Defaults.SancarValue)
+	addCoinsListEntry(Defaults.DES_Ulfric,     Defaults.UlfricValue)
 	int i = 0
 	while(i < coinsMaxIndex && currentIndex < numCoins)
 		MiscObject coin = CoinData.getCoin(i)
@@ -195,21 +191,21 @@ state toggleVerboseExchange
 	endEvent
 endState
 
-state Auri
+state Mallari
 	Event OnHighlightST()
-		;setInfoText(AuriInfoText)
+		;setInfoText(MallariInfoText)
 	endEvent
 	Event OnDefaultST()
-		Defaults.AuriValue = defaultAuriValue
+		Defaults.MallariValue = defaultMallariValue
 	endEvent
 	Event OnSliderOpenST()
-		SetSliderDialogStartValue(Defaults.AuriValue)
-		SetSliderDialogDefaultValue(Defaults.AuriValue)
+		SetSliderDialogStartValue(Defaults.MallariValue)
+		SetSliderDialogDefaultValue(Defaults.MallariValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
 	Event OnSliderAcceptST(float value)
-		Defaults.AuriValue = value
+		Defaults.MallariValue = value
 		coinValues[0] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
@@ -235,41 +231,41 @@ state Drakr
 	endEvent
 endState
 
-state Harald
+state Mala
 	Event OnHighlightST()
-		;setInfoText(HaraldInfoText)
+		;setInfoText(MalaInfoText)
 	endEvent
 	Event OnDefaultST()
-		Defaults.HaraldValue = defaultHaraldValue
+		Defaults.MalaValue = defaultMalaValue
 	endEvent
 	Event OnSliderOpenST()
-		SetSliderDialogStartValue(Defaults.HaraldValue)
-		SetSliderDialogDefaultValue(Defaults.HaraldValue)
+		SetSliderDialogStartValue(Defaults.MalaValue)
+		SetSliderDialogDefaultValue(Defaults.MalaValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
 	Event OnSliderAcceptST(float value)
-		Defaults.HaraldValue = value
+		Defaults.MalaValue = value
 		coinValues[2] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
 
-state Mallari
+state Nchuark
 	Event OnHighlightST()
-		;setInfoText(MallariInfoText)
+		;setInfoText(NchuarkInfoText)
 	endEvent
 	Event OnDefaultST()
-		Defaults.MallariValue = defaultMallariValue
+		Defaults.NchuarkValue = defaultNchuarkValue
 	endEvent
 	Event OnSliderOpenST()
-		SetSliderDialogStartValue(Defaults.MallariValue)
-		SetSliderDialogDefaultValue(Defaults.MallariValue)
+		SetSliderDialogStartValue(Defaults.NchuarkValue)
+		SetSliderDialogDefaultValue(Defaults.NchuarkValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
 	Event OnSliderAcceptST(float value)
-		Defaults.MallariValue = value
+		Defaults.NchuarkValue = value
 		coinValues[3] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
@@ -295,26 +291,6 @@ state Mede
 	endEvent
 endState
 
-state Nchuark
-	Event OnHighlightST()
-		;setInfoText(NchuarkInfoText)
-	endEvent
-	Event OnDefaultST()
-		Defaults.NchuarkValue = defaultNchuarkValue
-	endEvent
-	Event OnSliderOpenST()
-		SetSliderDialogStartValue(Defaults.NchuarkValue)
-		SetSliderDialogDefaultValue(Defaults.NchuarkValue)
-		SetSliderDialogRange(0.0, maxCoinValue)
-		SetSliderDialogInterval(0.05)
-	endEvent
-	Event OnSliderAcceptST(float value)
-		Defaults.NchuarkValue = value
-		coinValues[5] = value
-		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
-	endEvent
-endState
-
 state Sancar
 	Event OnHighlightST()
 		;setInfoText(SancarInfoText)
@@ -330,7 +306,7 @@ state Sancar
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.SancarValue = value
-		coinValues[6] = value
+		coinValues[5] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -350,7 +326,7 @@ state Ulfric
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.UlfricValue = value
-		coinValues[7] = value
+		coinValues[6] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
