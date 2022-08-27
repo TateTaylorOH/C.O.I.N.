@@ -5,6 +5,7 @@ DES_DefaultCoins Property Defaults Auto
 
 float defaultMallariValue   = 0.6
 float defaultDrakrValue     = 0.15
+float defaultGibberValue    = 1.61803
 float defaultMalaValue      = 0.4
 float defaultNchuarkValue   = 0.25
 float defaultMedeValue      = 0.8
@@ -49,6 +50,7 @@ endFunction
 function initializeNewCoins()
 	Defaults.MallariValue    = defaultMallariValue
 	Defaults.DrakrValue      = defaultDrakrValue
+	Defaults.GibberValue     = defaultGibberValue
 	Defaults.MalaValue       = defaultMalaValue
 	Defaults.NchuarkValue    = defaultNchuarkValue
 	Defaults.MedeValue       = defaultMedeValue
@@ -61,11 +63,12 @@ function initializeNewCoins()
 	coinStates = new String[7]
 	coinStates[0] = "Mallari"
 	coinStates[1] = "Drakr"
-	coinStates[2] = "Mala"
-	coinStates[3] = "Nchuark"
-	coinStates[4] = "Mede"
-	coinStates[5] = "Sancar"
-	coinStates[6] = "Ulfric"
+	coinStates[2] = "Gibber"
+	coinStates[3] = "Mala"
+	coinStates[4] = "Nchuark"
+	coinStates[5] = "Mede"
+	coinStates[6] = "Sancar"
+	coinStates[7] = "Ulfric"
 endFunction
 
 function buildSettingsPage()
@@ -95,11 +98,15 @@ int function buildCoinsList()
 	int numDrakrAlts = 4 ; 5 drakrs share one entry
 	currentIndex = 0
 	int numCoins = CoinData.getNumCoins() - numDrakrAlts
+	int numGibberAlts = 1 ; 2 drakrs share one entry
+	currentIndex = 0
+	int numCoins = CoinData.getNumCoins() - numGibberAlts
 	coinForms = Utility.createFormArray(numCoins)
 	coinNames = Utility.createStringArray(numCoins)
 	coinValues = Utility.createFloatArray(numCoins)
 	addCoinsListEntry(Defaults.DES_Mallari,    Defaults.MallariValue)
 	addCoinsListEntry(None,                    Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
+	addCoinsListEntry(None,                    Defaults.GibberValue, Defaults.DES_GibberFront.getName())
 	addCoinsListEntry(Defaults.DES_Mala,       Defaults.MalaValue)
 	addCoinsListEntry(Defaults.DES_Nchuark,    Defaults.NchuarkValue)
 	addCoinsListEntry(Defaults.DES_Mede,       Defaults.MedeValue)
@@ -231,6 +238,26 @@ state Drakr
 	endEvent
 endState
 
+state Gibber
+	Event OnHighlightST()
+		;setInfoText(GibberInfoText)
+	endEvent
+	Event OnDefaultST()
+		Defaults.GibberValue = defaultGibberValue
+	endEvent
+	Event OnSliderOpenST()
+		SetSliderDialogStartValue(Defaults.GibberValue)
+		SetSliderDialogDefaultValue(Defaults.GibberValue)
+		SetSliderDialogRange(0.0, maxCoinValue)
+		SetSliderDialogInterval(0.05)
+	endEvent
+	Event OnSliderAcceptST(float value)
+		Defaults.GibberValue = value
+		coinValues[2] = value
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
+	endEvent
+endState
+
 state Mala
 	Event OnHighlightST()
 		;setInfoText(MalaInfoText)
@@ -246,7 +273,7 @@ state Mala
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.MalaValue = value
-		coinValues[2] = value
+		coinValues[3] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -266,7 +293,7 @@ state Nchuark
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.NchuarkValue = value
-		coinValues[3] = value
+		coinValues[4] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -286,7 +313,7 @@ state Mede
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.MedeValue = value
-		coinValues[4] = value
+		coinValues[5] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -306,7 +333,7 @@ state Sancar
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.SancarValue = value
-		coinValues[5] = value
+		coinValues[6] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -326,7 +353,7 @@ state Ulfric
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.UlfricValue = value
-		coinValues[6] = value
+		coinValues[7] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
