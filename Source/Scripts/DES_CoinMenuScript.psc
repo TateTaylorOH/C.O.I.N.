@@ -105,15 +105,15 @@ int function buildCoinsList()
 	addCoinsListEntry(Defaults.DES_Mede,       Defaults.MedeValue)
 	addCoinsListEntry(Defaults.DES_Sancar,     Defaults.SancarValue)
 	addCoinsListEntry(Defaults.DES_Ulfric,     Defaults.UlfricValue)
-	int i = 0
-	while(i < coinsMaxIndex && currentIndex < numCoins)
-		MiscObject coin = CoinData.getCoin(i)
-		string coinName = coin.getName()
-		if(coinNames.find(coinName) < 0)
-			addCoinsListEntry(coin, name = coinName)
-		endIf
-		i += 1
-	endWhile
+;	int i = 0
+;	while(i < coinsMaxIndex && currentIndex < numCoins)
+;		MiscObject coin = CoinData.getCoin(i)
+;		string coinName = coin.getName()
+;		if(coinNames.find(coinName) < 0)
+;			addCoinsListEntry(coin, name = coinName)
+;		endIf
+;		i += 1
+;	endWhile
 	return CoinData.getNumCoins()
 endFunction
 
@@ -127,8 +127,8 @@ function buildCoinsPage()
 	while(i < numCoins)
 		if(i < Defaults.numDefaultCoins)
 			AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
-		else; non default coins are handled by index instead of name
-			AddSliderOption(coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
+;		else; non default coins are handled by index instead of name
+;			AddSliderOption(coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
 		endIf
 		i += 1
 	endWhile
