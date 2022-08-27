@@ -2,7 +2,7 @@ Scriptname DES_DefaultCoins extends Quest
 
 DES_CoinManager Property CoinData Auto
 
-int property numDefaultCoins = 7 auto hidden
+int property numDefaultCoins = 8 auto hidden
 
 MiscObject Property DES_DrakrDragon Auto
 MiscObject Property DES_DrakrMoth Auto
@@ -10,6 +10,10 @@ MiscObject Property DES_DrakrOwl Auto
 MiscObject Property DES_DrakrWhale Auto
 MiscObject Property DES_DrakrNord Auto
 float property DrakrValue = 0.15 auto hidden
+
+MiscObject Property DES_GibberFront Auto
+MiscObject Property DES_GibberBack Auto
+float property GibberValue = 1.61803 auto hidden
 
 MiscObject Property DES_Mala Auto
 float property MalaValue = 0.4 auto hidden
@@ -42,6 +46,8 @@ function setDefaultCoinValues()
 	CoinData.setCoinValue(DES_DrakrOwl, DrakrValue)
 	CoinData.setCoinValue(DES_DrakrWhale, DrakrValue)
 	CoinData.setCoinValue(DES_DrakrNord, DrakrValue)
+	CoinData.setCoinValue(DES_GibberFront, GibberValue)
+	CoinData.setCoinValue(DES_GibberBack, GibberValue)
 	CoinData.setCoinValue(DES_Mala, MalaValue)
 	CoinData.setCoinValue(DES_Mallari, MallariValue)	
 	CoinData.setCoinValue(DES_Mede, MedeValue)
