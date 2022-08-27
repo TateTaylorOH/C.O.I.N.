@@ -331,20 +331,20 @@ state Ulfric
 	endEvent
 endState
 
-Event OnOptionSliderOpen(int option)
-	int index = option/2
-	float value = coinValues[index]
-	SetSliderDialogStartValue(value)
-	SetSliderDialogDefaultValue(value)
-	SetSliderDialogRange(0.0, maxCoinValue)
-	SetSliderDialogInterval(0.05)
-endEvent
-
-Event OnOptionSliderAccept(int option, float value)
-	int index = option/2
-	coinValues[index] = value
-	SetSliderOptionValue(option, value, "$COIN_FORMAT_VALUE")
-endEvent
+;Event OnOptionSliderOpen(int option)
+;	int index = option/2
+;	float value = coinValues[index]
+;	SetSliderDialogStartValue(value)
+;	SetSliderDialogDefaultValue(value)
+;	SetSliderDialogRange(0.0, maxCoinValue)
+;	SetSliderDialogInterval(0.05)
+;endEvent
+;
+;Event OnOptionSliderAccept(int option, float value)
+;	int index = option/2
+;	coinValues[index] = value
+;	SetSliderOptionValue(option, value, "$COIN_FORMAT_VALUE")
+;endEvent
 
 ;state TemplateStateCloneMe
 ;	Event onHighlightST() ; text, toggles, sliders, menus, colors, keymaps, inputs
