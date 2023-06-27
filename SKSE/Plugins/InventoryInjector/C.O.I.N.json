@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+  "rules": [
+    {
+      "match": {
+        "formType": "MiscItem",
+        "formId": {
+          "anyOf": [
+            "Update.esm|DE5012",
+            "Update.esm|DE5013",
+            "Update.esm|DE5014",
+            "Update.esm|DE5015",
+            "Update.esm|DE5016",
+            "Update.esm|DE5017",
+            "Update.esm|DE5018",
+            "Update.esm|DE5019",
+            "Update.esm|DE5020",
+            "Update.esm|DE5021",
+            "Update.esm|DE5022",
+            "Update.esm|DE5023",
+            "Update.esm|DE5024",
+            "BSAssets.esm|6028DC"
+          ]
+        }
+      },
+      "assign": {
+        "subType": "Gold"
+      }
+    },
+    {
+      "match": {
+        "formType": "MiscItem",
+        "subType": "Gold"
+      },
+      "assign": {
+        "subTypeDisplay": "$Currency"
+      }
+    }
+  ]
+}
