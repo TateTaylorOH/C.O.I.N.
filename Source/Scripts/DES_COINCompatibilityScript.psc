@@ -12,19 +12,20 @@ float property myValue = 1.0 auto
 ;-- Functions ---------------------------------------
 
 Function COINCompatibilityInjection()
-	DES_CoinManager CoinHandler = Quest.getQuest("DES_CoinHandler") as DES_CoinManager
-	while (!CoinHandler.ready)
-		utility.wait(0.1)
-	endWhile
-	CoinHandler.setCoinValue(myCoin, myValue)
+;Debug.Notification("COINCompatibilityInjection has fired!")
+DES_CoinManager CoinHandler = Quest.getQuest("DES_CoinHandler") as DES_CoinManager
+CoinHandler.setCoinValue(myCoin, myValue)
+	;Debug.Notification("myCoin has been added to the formlist!")
 EndFunction
 
 Event OnInit()
+	;Debug.Notification("OnInit has fired!")
 	COINCompatibilityInjection()
 	self.Stop()
 EndEvent
 
 Event OnPlayerLoadGame()
+	;Debug.Notification("OnPlayerLoadGame has fired!")
 	COINCompatibilityInjection()
 	self.Stop()
 EndEvent
