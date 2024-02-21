@@ -1,0 +1,8 @@
+﻿$COIN_LABEL_SETTINGS	Einstellungen
+$COIN_LABEL_VALUES	Münzen
+$COIN_LABEL_AUTOEXCHANGE	Automatisch Münzen eintauschen
+$COIN_LABEL_VERBOSE	Benachrichtigung über das Hinzufügen von Septim anzeigen
+$COIN_INFO_AUTOEXCHANGE	Wenn du diese Option aktivierst, werden die Münzen automatisch in Septims umgetauscht. Dies wird empfohlen.
+$COIN_INFO_VERBOSE	Wenn diese Option aktiviert ist, werden Benachrichtigungen angezeigt, wenn Münzen in Septims umgetauscht werden. Dies wird nicht empfohlen.
+$COIN_FORMAT_VALUE	{2} Septime
+$Currency	Währung
