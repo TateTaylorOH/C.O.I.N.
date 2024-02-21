@@ -2,7 +2,7 @@ Scriptname DES_DefaultCoins extends Quest
 
 DES_CoinManager Property CoinData Auto
 
-int property numDefaultCoins = 9 auto hidden
+int property numDefaultCoins = 7 auto hidden
 
 MiscObject Property DES_DrakrDragon Auto
 MiscObject Property DES_DrakrMoth Auto
@@ -12,10 +12,10 @@ MiscObject Property DES_DrakrNord Auto
 float property DrakrValue = 0.15 auto hidden
 
 MiscObject Property DES_GibberFront Auto
-float property GibberFrontValue = 1.6 auto hidden
+float property GibberFrontValue = 1.61803 auto hidden
 
 MiscObject Property DES_GibberBack Auto
-float property GibberBackValue = 1.0 auto hidden
+float property GibberBackValue = 0.99965 auto hidden
 
 MiscObject Property DES_Mala Auto
 float property MalaValue = 0.4 auto hidden
