@@ -6,6 +6,7 @@
         "locationKeywords" : [
           "LocSetNordicRuin"
         ],
+        "randomAdd": true,
         "bypassUnsafeContainers": true
       },
       "changes":[
@@ -36,7 +37,25 @@
       },
       "changes":[
         {
-          "remove" : "0xF|Skyrim.esm",
+           "remove" : "0xDE5012|Update.esm",
+           "add" : [
+             "0xDE5014|Update.esm"
+          ]
+        },   
+        {
+          "remove" : "0xDE5013|Update.esm",
+          "add" : [
+            "0xDE5014|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5015|Update.esm",
+          "add" : [
+            "0xDE5014|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5016|Update.esm",
           "add" : [
             "0xDE5014|Update.esm"
           ]
