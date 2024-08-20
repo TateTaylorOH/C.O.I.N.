@@ -22,7 +22,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Ancient Nord Drakr",
+      "friendlyName" : "Septim/Atmoran Drakr to Ancient Nord Drakr",
       "conditions" : {
         "locations" : [
           "0x19161|Skyrim.esm",
@@ -132,6 +132,27 @@
             "0xDE5023|Update.esm"
           ],
           "bypassUnsafeContainers": true
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Ulfric Post-Civil War.",
+      "conditions" : {
+        "locations" : [
+          "0x18A57|Skyrim.esm"
+        ],
+        "questCondition":{
+          "questID":"CW03",
+          "stage":"225"
+        },
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5024|Update.esm"
+          ]
         }
       ]
     }
