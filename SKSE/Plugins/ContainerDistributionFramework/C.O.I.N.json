@@ -141,9 +141,10 @@
         "locations" : [
           "0x18A57|Skyrim.esm"
         ],
-        "questCondition":{
+        "questConditions":{
           "questID":"CW03",
-          "stage":"225"
+          "completed":true,
+          "stageDone":[225]
         },
         "bypassUnsafeContainers": true
       },
