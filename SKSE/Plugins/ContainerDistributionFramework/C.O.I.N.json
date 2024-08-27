@@ -1,0 +1,161 @@
+{
+  "rules" : [
+    {
+      "friendlyName" : "Septim to Atmoran Drakr",
+      "conditions" : {
+        "locationKeywords" : [
+          "LocSetNordicRuin"
+        ],
+        "randomAdd": true,
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5012|Update.esm",
+            "0xDE5013|Update.esm",
+            "0xDE5015|Update.esm",
+            "0xDE5016|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim/Atmoran Drakr to Ancient Nord Drakr",
+      "conditions" : {
+        "locations" : [
+          "0x19161|Skyrim.esm",
+          "0x357E|Dawnguard.esm",
+          "0x19188|Skyrim.esm",
+          "0x19261|Skyrim.esm",
+          "0x1928C|Skyrim.esm",
+          "0x19293|Skyrim.esm",
+          "0x192BF|Skyrim.esm"
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+           "remove" : "0xDE5012|Update.esm",
+           "add" : [
+             "0xDE5014|Update.esm"
+          ]
+        },   
+        {
+          "remove" : "0xDE5013|Update.esm",
+          "add" : [
+            "0xDE5014|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5015|Update.esm",
+          "add" : [
+            "0xDE5014|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5016|Update.esm",
+          "add" : [
+            "0xDE5014|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Ayleid Mala",
+      "conditions" : {
+        "locationKeywords" : [
+          "ccBGSSSE067_LocTypeAyleidRuin"
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5019|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Ancient Falmer Mallari",
+      "conditions" : {
+        "locations" : [
+          "0xA87C|Dawnguard.esm",
+          "0x162B0|Dawnguard.esm",
+          "0x162B2|Dawnguard.esm",
+          "0x162B4|Dawnguard.esm"
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5020|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Dwarven Nchuark",
+      "conditions" : {
+        "locationKeywords" : [
+          "LocSetDwarvenRuin"
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5022|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Sancar.",
+      "conditions" : {
+        "locations" : [
+          "0x19285|Skyrim.esm",
+          "0x18C92|Skyrim.esm"
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5023|Update.esm"
+          ],
+          "bypassUnsafeContainers": true
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Ulfric Post-Civil War.",
+      "conditions" : {
+        "locations" : [
+          "0x18A57|Skyrim.esm"
+        ],
+        "questConditions":{
+          "questID":"CW03",
+          "completed":true,
+          "stageDone":[225]
+        },
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5024|Update.esm"
+          ]
+        }
+      ]
+    }
+  ]
+}
