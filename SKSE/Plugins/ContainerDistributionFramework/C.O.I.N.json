@@ -37,6 +37,12 @@
       },
       "changes":[
         {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5014|Update.esm"
+         ]
+       },   
+        {
            "remove" : "0xDE5012|Update.esm",
            "add" : [
              "0xDE5014|Update.esm"
@@ -117,6 +123,24 @@
       ]
     },
     {
+      "friendlyName" : "Septim to Gibber.",
+      "conditions" : {
+        "locations" : [
+          "0x10CF|ccbgssse025-advdsgs.esm"
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5018|Update.esm"
+          ],
+          "bypassUnsafeContainers": true
+        }
+      ]
+    },
+    {
       "friendlyName" : "Septim to Sancar.",
       "conditions" : {
         "locations" : [
@@ -132,28 +156,6 @@
             "0xDE5023|Update.esm"
           ],
           "bypassUnsafeContainers": true
-        }
-      ]
-    },
-    {
-      "friendlyName" : "Septim to Ulfric Post-Civil War.",
-      "conditions" : {
-        "locations" : [
-          "0x18A57|Skyrim.esm"
-        ],
-        "questConditions":{
-          "questID":"CW03",
-          "completed":true,
-          "stageDone":[225]
-        },
-        "bypassUnsafeContainers": true
-      },
-      "changes":[
-        {
-          "remove" : "0xF|Skyrim.esm",
-          "add" : [
-            "0xDE5024|Update.esm"
-          ]
         }
       ]
     }
