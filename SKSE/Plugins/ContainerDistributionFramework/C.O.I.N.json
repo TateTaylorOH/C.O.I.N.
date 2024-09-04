@@ -230,7 +230,7 @@
           ]
         },   
         {
-          "remove" : "0xDE5014|Update.es",
+          "remove" : "0xDE5014|Update.esm",
           "add" : [
             "0xF|Skyrim.esm"
           ]
@@ -324,7 +324,7 @@
           ]
         },   
         {
-          "remove" : "0xDE5014|Update.es",
+          "remove" : "0xDE5014|Update.esm",
           "add" : [
             "0xF|Skyrim.esm"
           ]
