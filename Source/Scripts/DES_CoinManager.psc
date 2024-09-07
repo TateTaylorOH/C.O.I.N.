@@ -1,6 +1,7 @@
 scriptname DES_CoinManager extends Quest
 
 DES_CoinExchanger Property PlayerAlias Auto
+FormList Property DES_DefaultCoinsList Auto
 bool property ready auto hidden
 
 MiscObject[] otherCoins
@@ -18,6 +19,7 @@ function resetCoins()
 	coinMults = new float[128]
 	nextIndex = 0
 	PlayerAlias.removeAllInventoryEventFilters()
+	PlayerAlias.AddInventoryEventFilter(DES_DefaultCoinsList)
 	ready = true
 endFunction
 
@@ -45,6 +47,7 @@ float function setCoinValue(MiscObject coin, float value)
 		endIf
 		oldValue = coinMults[i]
 		coinMults[i] = value
+		coin.SetGoldValue(value as int)
 		return oldValue
 	endIf
 	return 0.0

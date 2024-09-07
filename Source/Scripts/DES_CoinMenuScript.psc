@@ -3,6 +3,8 @@ Scriptname DES_CoinMenuScript extends SKI_ConfigBase
 DES_CoinManager Property CoinData Auto
 DES_DefaultCoins Property Defaults Auto
 
+keyword property DES_NoMCM auto
+
 float defaultMallariValue   = 0.6
 float defaultDrakrValue     = 0.15
 float defaultMalaValue      = 0.4
@@ -126,15 +128,19 @@ int function buildCoinsList()
 endFunction
 
 function buildCoinsPage()
-	if(CoinData.getNumCoins() > coinsMaxIndex) ; rebuild coin arrays if they're out of date
+	;if(CoinData.getNumCoins() > coinsMaxIndex) ; rebuild coin arrays if they're out of date
 		coinsMaxIndex = buildCoinsList()
-	endIf
+	;endIf
 	setCursorFillMode(TOP_TO_BOTTOM)
 	int i = 0
 	int numCoins = coinNames.length
 	while(i < numCoins)
 		if(i < Defaults.numDefaultCoins)
-			AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
+			IF coinForms[i].HasKeyword(DES_NoMCM)
+				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE", OPTION_FLAG_DISABLED)
+			ELSE
+				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
+			ENDIF
 ;		else; non default coins are handled by index instead of name
 ;			AddSliderOption(coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
 		endIf

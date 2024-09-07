@@ -125,18 +125,19 @@
     {
       "friendlyName" : "Septim to Gibber.",
       "conditions" : {
-        "locations" : [
-          "0x10CF|ccbgssse025-advdsgs.esm" //Solitude Sewers
+        "containers" : [
+          "0x3079|Update.esm" //Hollowed Stump
         ],
+        "randomAdd": true,
         "bypassUnsafeContainers": true
       },
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
+            "0xDE5017|Update.esm",
             "0xDE5018|Update.esm"
-          ],
-          "bypassUnsafeContainers": true
+          ]
         }
       ]
     },
@@ -154,8 +155,7 @@
           "remove" : "0xF|Skyrim.esm",
           "add" : [
             "0xDE5023|Update.esm"
-          ],
-          "bypassUnsafeContainers": true
+          ]
         }
       ]
     },
@@ -248,18 +248,6 @@
           ]
         },
         {
-          "remove" : "0xDE5017|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5018|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
           "remove" : "0xDE5019|Update.esm",
           "add" : [
             "0xF|Skyrim.esm"
@@ -272,25 +260,7 @@
           ]
         },
         {
-          "remove" : "0xDE5021|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
           "remove" : "0xDE5022|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5023|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5024|Update.esm",
           "add" : [
             "0xF|Skyrim.esm"
           ]
@@ -342,18 +312,6 @@
           ]
         },
         {
-          "remove" : "0xDE5017|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5018|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
           "remove" : "0xDE5019|Update.esm",
           "add" : [
             "0xF|Skyrim.esm"
@@ -366,25 +324,7 @@
           ]
         },
         {
-          "remove" : "0xDE5021|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
           "remove" : "0xDE5022|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5023|Update.esm",
-          "add" : [
-            "0xF|Skyrim.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5024|Update.esm",
           "add" : [
             "0xF|Skyrim.esm"
           ]
