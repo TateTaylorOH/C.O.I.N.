@@ -11,6 +11,9 @@ MiscObject Property DES_DrakrWhale Auto
 MiscObject Property DES_DrakrNord Auto
 float property DrakrValue = 0.15 auto hidden
 
+MiscObject Property DES_Dram Auto
+float property DramValue = 0.33 auto hidden
+
 MiscObject Property DES_GibberFront Auto
 float property GibberFrontValue = 1.6 auto hidden
 
@@ -48,6 +51,7 @@ function setDefaultCoinValues()
 	CoinData.setCoinValue(DES_DrakrOwl, DrakrValue)
 	CoinData.setCoinValue(DES_DrakrWhale, DrakrValue)
 	CoinData.setCoinValue(DES_DrakrNord, DrakrValue)
+	CoinData.setCoinValue(DES_Dram, DramValue)
 	CoinData.setCoinValue(DES_GibberFront, GibberFrontValue)
 	CoinData.setCoinValue(DES_GibberBack, GibberBackValue)
 	CoinData.setCoinValue(DES_Mala, MalaValue)
