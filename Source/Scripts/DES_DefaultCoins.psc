@@ -12,7 +12,7 @@ MiscObject Property DES_DrakrNord Auto
 float property DrakrValue = 0.15 auto hidden
 
 MiscObject Property DES_Dram Auto
-float property DramValue = 0.33 auto hidden
+float property DramValue = 0.30 auto hidden
 
 MiscObject Property DES_GibberFront Auto
 float property GibberFrontValue = 1.6 auto hidden

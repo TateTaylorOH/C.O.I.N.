@@ -8,7 +8,7 @@ keyword property DES_NoMCM auto
 float defaultMallariValue   = 0.6
 float defaultDrakrValue     = 0.15
 float defaultMalaValue      = 0.4
-float defaultDramValue      = 0.33
+float defaultDramValue      = 0.30
 float defaultNchuarkValue   = 0.25
 float defaultGibberMania    = 1.6
 float defaultGibberDementia = 1.0
