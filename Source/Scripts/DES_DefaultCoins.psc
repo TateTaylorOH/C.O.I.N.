@@ -2,7 +2,7 @@ Scriptname DES_DefaultCoins extends Quest
 
 DES_CoinManager Property CoinData Auto
 
-int property numDefaultCoins = 9 auto hidden
+int property numDefaultCoins = 10 auto hidden
 
 MiscObject Property DES_DrakrDragon Auto
 MiscObject Property DES_DrakrMoth Auto

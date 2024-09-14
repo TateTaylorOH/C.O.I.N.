@@ -66,7 +66,7 @@ function initializeNewCoins()
 		utility.wait(0.1)
 	endWhile
 	Defaults.setDefaultCoinValues()
-	coinStates = new String[9]
+	coinStates = new String[10]
 	coinStates[0] = "Mallari"
 	coinStates[1] = "Drakr"
 	coinStates[2] = "Mala"
@@ -211,14 +211,15 @@ endState
 
 state Mallari
 	Event OnHighlightST()
-		;setInfoText(MallariInfoText)
+		setInfoText("$MALLARI_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.MallariValue = defaultMallariValue
+		SetSliderOptionValueST(defaultMallariValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.MallariValue)
-		SetSliderDialogDefaultValue(Defaults.MallariValue)
+		SetSliderDialogDefaultValue(defaultMallariValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -231,14 +232,15 @@ endState
 
 state Drakr
 	Event OnHighlightST()
-		;setInfoText(DrakrInfoText)
+		setInfoText("$DRAKR_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.DrakrValue = defaultDrakrValue
+		SetSliderOptionValueST(defaultDrakrValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.DrakrValue)
-		SetSliderDialogDefaultValue(Defaults.DrakrValue)
+		SetSliderDialogDefaultValue(defaultDrakrValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -251,14 +253,15 @@ endState
 
 state Mala
 	Event OnHighlightST()
-		;setInfoText(MalaInfoText)
+		setInfoText("$MALA_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.MalaValue = defaultMalaValue
+		SetSliderOptionValueST(defaultMalaValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.MalaValue)
-		SetSliderDialogDefaultValue(Defaults.MalaValue)
+		SetSliderDialogDefaultValue(defaultMalaValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -271,14 +274,15 @@ endState
 
 state Dram
 	Event OnHighlightST()
-		;setInfoText(NchuarkInfoText)
+		setInfoText("$DRAM_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.DramValue = defaultDramValue
+		SetSliderOptionValueST(defaultDramValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.DramValue)
-		SetSliderDialogDefaultValue(Defaults.DramValue)
+		SetSliderDialogDefaultValue(defaultDramValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -291,14 +295,15 @@ endState
 
 state Nchuark
 	Event OnHighlightST()
-		;setInfoText(NchuarkInfoText)
+		setInfoText("$NCHUARK_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.NchuarkValue = defaultNchuarkValue
+		SetSliderOptionValueST(defaultNchuarkValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.NchuarkValue)
-		SetSliderDialogDefaultValue(Defaults.NchuarkValue)
+		SetSliderDialogDefaultValue(defaultNchuarkValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -311,14 +316,15 @@ endState
 
 state GibberMania
 	Event OnHighlightST()
-		;setInfoText(GibberFrontInfoText)
+		setInfoText("$GIBBERMANIA_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.GibberFrontValue = defaultGibberMania
+		SetSliderOptionValueST(defaultGibberMania, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.GibberFrontValue)
-		SetSliderDialogDefaultValue(Defaults.GibberFrontValue)
+		SetSliderDialogDefaultValue(defaultGibberMania)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -331,14 +337,15 @@ endState
 
 state GibberDementia
 	Event OnHighlightST()
-		;setInfoText(GibberBackInfoText)
+		setInfoText("$GIBBERDEMENTIA_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.GibberBackValue = defaultGibberDementia
+		SetSliderOptionValueST(defaultGibberDementia, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.GibberBackValue)
-		SetSliderDialogDefaultValue(Defaults.GibberBackValue)
+		SetSliderDialogDefaultValue(defaultGibberDementia)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -351,14 +358,15 @@ endState
 
 state Mede
 	Event OnHighlightST()
-		;setInfoText(MedeInfoText)
+		setInfoText("$MEDE_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.MedeValue = defaultMedeValue
+		SetSliderOptionValueST(defaultMedeValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.MedeValue)
-		SetSliderDialogDefaultValue(Defaults.MedeValue)
+		SetSliderDialogDefaultValue(defaultMedeValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -371,14 +379,15 @@ endState
 
 state Sancar
 	Event OnHighlightST()
-		;setInfoText(SancarInfoText)
+		setInfoText("$SANCAR_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.SancarValue = defaultSancarValue
+		SetSliderOptionValueST(defaultSancarValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.SancarValue)
-		SetSliderDialogDefaultValue(Defaults.SancarValue)
+		SetSliderDialogDefaultValue(defaultSancarValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
@@ -391,14 +400,15 @@ endState
 
 state Ulfric
 	Event OnHighlightST()
-		;setInfoText(UlfricInfoText)
+		setInfoText("$ULFRIC_INFO_TEXT")
 	endEvent
 	Event OnDefaultST()
 		Defaults.UlfricValue = defaultUlfricValue
+		SetSliderOptionValueST(defaultUlfricValue, "$COIN_FORMAT_VALUE")
 	endEvent
 	Event OnSliderOpenST()
 		SetSliderDialogStartValue(Defaults.UlfricValue)
-		SetSliderDialogDefaultValue(Defaults.UlfricValue)
+		SetSliderDialogDefaultValue(defaultUlfricValue)
 		SetSliderDialogRange(0.0, maxCoinValue)
 		SetSliderDialogInterval(0.05)
 	endEvent
