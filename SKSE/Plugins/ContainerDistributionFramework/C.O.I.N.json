@@ -123,6 +123,23 @@
       ]
     },
     {
+      "friendlyName" : "Septim to Dram/Septim.",
+      "conditions" : {
+        "locations" : [
+          "0x16E2A|Dragonborn.esm" //Solstheim
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0x2F6|C.O.I.N.esp"
+          ]
+        }
+      ]
+    },
+    {
       "friendlyName" : "Septim to Gibber.",
       "conditions" : {
         "containers" : [
