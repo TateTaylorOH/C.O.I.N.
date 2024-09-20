@@ -123,60 +123,6 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Dram/Septim.",
-      "conditions" : {
-        "locations" : [
-          "0x16E2A|Dragonborn.esm" //Solstheim
-        ],
-        "bypassUnsafeContainers": true
-      },
-      "changes":[
-        {
-          "remove" : "0xF|Skyrim.esm",
-          "add" : [
-            "0x2F6|C.O.I.N.esp"
-          ]
-        }
-      ]
-    },
-    {
-      "friendlyName" : "Septim to Gibber.",
-      "conditions" : {
-        "containers" : [
-          "0x3079|Update.esm" //Hollowed Stump
-        ],
-        "randomAdd": true,
-        "bypassUnsafeContainers": true
-      },
-      "changes":[
-        {
-          "remove" : "0xF|Skyrim.esm",
-          "add" : [
-            "0xDE5017|Update.esm",
-            "0xDE5018|Update.esm"
-          ]
-        }
-      ]
-    },
-    {
-      "friendlyName" : "Septim to Sancar.",
-      "conditions" : {
-        "locations" : [
-          "0x19285|Skyrim.esm", //Northwatch Keep
-          "0x18C92|Skyrim.esm"  //Thalmor Embassy
-        ],
-        "bypassUnsafeContainers": true
-      },
-      "changes":[
-        {
-          "remove" : "0xF|Skyrim.esm",
-          "add" : [
-            "0xDE5023|Update.esm"
-          ]
-        }
-      ]
-    },
-    {
       "friendlyName" : "C.O.I.N. Container Exclusions",
       "conditions" : {
         "containers" : [
