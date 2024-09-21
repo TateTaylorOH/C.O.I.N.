@@ -150,14 +150,22 @@ function buildCoinsPage()
 	int numCoins = coinNames.length
 	while(i < numCoins)
 		if !lheader
-			AddHeaderOption("Coins")			
+			AddHeaderOption("$COIN_ACTIVE")
+			AddTextOption("$COIN_ACTIVE_SUPPORT", "", OPTION_FLAG_DISABLED)	
+			AddHeaderOption("")	
 			lheader = true			
 		endif
 		if i > 3
 			if !rheader
 				SetCursorPosition(r)
-				AddHeaderOption("Legacy Coins")
+				AddHeaderOption("$COIN_DEPRECATED")
 				r += 2
+				SetCursorPosition(r)
+				AddTextOption("$COIN_LEGACY_SUPPORT", "", OPTION_FLAG_DISABLED)
+				r += 2
+				SetCursorPosition(r)
+				AddHeaderOption("")
+				r += 2				
 				rheader = true
 			endif
 			SetCursorPosition(r)
