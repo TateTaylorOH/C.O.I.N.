@@ -24,7 +24,8 @@
       "friendlyName" : "Septim to Ancient Nord Drakr",
       "conditions" : {
         "locationKeywords" : [
-          "LocSetNordicRuin"
+          "LocSetNordicRuin",
+          "DLC1VampireCastleDungeonLocation"
         ],
         "randomAdd": true,
         "bypassUnsafeContainers": true
