@@ -21,7 +21,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Ancient Atmoran Drakr",
+      "friendlyName" : "Septim to Ancient Nord Drakr",
       "conditions" : {
         "locationKeywords" : [
           "LocSetNordicRuin"
@@ -37,53 +37,6 @@
             "0xDE5013|Update.esm",
             "0xDE5015|Update.esm",
             "0xDE5016|Update.esm"
-          ]
-        }
-      ]
-    },
-    {
-      "friendlyName" : "Septim/Ancient Atmoran Drakr to Ancient Nord Drakr",
-      "conditions" : {
-        "locations" : [
-          "0x19161|Skyrim.esm",  //Dead Men's Respite
-          "0x19188|Skyrim.esm",  //Geirmund's Hall
-          "0x19261|Skyrim.esm",  //Korvanjund
-          "0x1928C|Skyrim.esm",  //Potema's Catacombs
-          "0x19293|Skyrim.esm",  //Reachwater Rock
-          "0x192BF|Skyrim.esm",  //Ustengrav
-          "0x357E|Dawnguard.esm" //Castle Volkihar (Dungeon)
-        ],
-        "bypassUnsafeContainers": true
-      },
-      "changes":[
-        {
-          "remove" : "0xF|Skyrim.esm",
-          "add" : [
-            "0xDE5014|Update.esm"
-         ]
-       },   
-        {
-           "remove" : "0xDE5012|Update.esm",
-           "add" : [
-             "0xDE5014|Update.esm"
-          ]
-        },   
-        {
-          "remove" : "0xDE5013|Update.esm",
-          "add" : [
-            "0xDE5014|Update.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5015|Update.esm",
-          "add" : [
-            "0xDE5014|Update.esm"
-          ]
-        },
-        {
-          "remove" : "0xDE5016|Update.esm",
-          "add" : [
-            "0xDE5014|Update.esm"
           ]
         }
       ]
