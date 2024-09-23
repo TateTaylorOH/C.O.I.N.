@@ -1,26 +1,6 @@
 {
   "rules" : [
     {
-      "friendlyName" : "Septim to Ancient Falmer Mallari",
-      "conditions" : {
-        "locations" : [
-          "0x162B0|Dawnguard.esm", //Darkfall Grotto
-          "0xA87C|Dawnguard.esm",  //Forgotten Vale
-          "0x162B4|Dawnguard.esm", //Forgotten Vale Cave
-          "0x162B2|Dawnguard.esm"  //Sharpslope Cave
-        ],
-        "bypassUnsafeContainers": true
-      },
-      "changes":[
-        {
-          "remove" : "0xF|Skyrim.esm",
-          "add" : [
-            "0xDE5020|Update.esm"
-          ]
-        }
-      ]
-    },
-    {
       "friendlyName" : "Septim to Ancient Nord Drakr",
       "conditions" : {
         "locationKeywords" : [
@@ -43,23 +23,6 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Ayleid Mala",
-      "conditions" : {
-        "locationKeywords" : [
-          "ccBGSSSE067_LocTypeAyleidRuin"
-        ],
-        "bypassUnsafeContainers": true
-      },
-      "changes":[
-        {
-          "remove" : "0xF|Skyrim.esm",
-          "add" : [
-            "0xDE5019|Update.esm"
-          ]
-        }
-      ]
-    },
-    {
       "friendlyName" : "Septim to Dwarven Nchuark",
       "conditions" : {
         "locationKeywords" : [
@@ -72,6 +35,62 @@
           "remove" : "0xF|Skyrim.esm",
           "add" : [
             "0xDE5022|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Ancient Falmer Mallari",
+      "conditions" : {
+        "locations" : [
+          "0x162B0|Dawnguard.esm", //Darkfall Grotto
+          "0xA87C|Dawnguard.esm",  //Forgotten Vale
+          "0x162B4|Dawnguard.esm", //Forgotten Vale Cave
+          "0x162B2|Dawnguard.esm"  //Sharpslope Cave
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5020|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Gibber.",
+      "conditions" : {
+        "containers" : [
+          "0x3079|Update.esm" //Hollowed Stump
+        ],
+        "randomAdd": true,
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5017|Update.esm",
+            "0xDE5018|Update.esm"
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Septim to Ayleid Mala",
+      "conditions" : {
+        "locationKeywords" : [
+          "ccBGSSSE067_LocTypeAyleidRuin"
+        ],
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5019|Update.esm"
           ]
         }
       ]

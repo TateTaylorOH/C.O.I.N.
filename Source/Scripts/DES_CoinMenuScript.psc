@@ -10,11 +10,11 @@ float defaultMallariValue   = 0.6
 float defaultDrakrValue     = 0.15
 float defaultMalaValue      = 0.4
 float defaultNchuarkValue   = 0.25
+float defaultGibberMania    = 1.6
+float defaultGibberDementia = 1.0
 
 ;LEGACY COINS
 float defaultDramValue      = 0.30
-float defaultGibberMania    = 1.6
-float defaultGibberDementia = 1.0
 float defaultMedeValue      = 0.8
 float defaultSancarValue    = 1.25
 float defaultUlfricValue    = 0.8
@@ -59,9 +59,9 @@ function initializeNewCoins()
 	Defaults.DrakrValue       = defaultDrakrValue
 	Defaults.MalaValue        = defaultMalaValue
 	Defaults.NchuarkValue     = defaultNchuarkValue
-	Defaults.DramValue        = defaultDramValue
 	Defaults.GibberFrontValue = defaultGibberMania
 	Defaults.GibberBackValue  = defaultGibberDementia
+	Defaults.DramValue        = defaultDramValue
 	Defaults.MedeValue        = defaultMedeValue
 	Defaults.SancarValue      = defaultSancarValue
 	Defaults.UlfricValue      = defaultUlfricValue
@@ -75,10 +75,10 @@ function initializeNewCoins()
 	coinStates[1] = "Drakr"
 	coinStates[2] = "Mala"
 	coinStates[3] = "Nchuark"
+	coinStates[4] = "GibberMania"
+	coinStates[5] = "GibberDementia"
 	;LEGACY COINS
-	coinStates[4] = "Dram"
-	coinStates[5] = "GibberMania"
-	coinStates[6] = "GibberDementia"
+	coinStates[6] = "Dram"
 	coinStates[7] = "Mede"
 	coinStates[8] = "Sancar"
 	coinStates[9] = "Ulfric"
@@ -119,10 +119,10 @@ int function buildCoinsList()
 	addCoinsListEntry(None,                    Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
 	addCoinsListEntry(Defaults.DES_Mala,       Defaults.MalaValue)
 	addCoinsListEntry(Defaults.DES_Nchuark,    Defaults.NchuarkValue)
-	;LEGACY COINS
-	addCoinsListEntry(Defaults.DES_Dram,       Defaults.DramValue)
 	addCoinsListEntry(Defaults.DES_GibberFront,Defaults.GibberFrontValue, "Gibber (Mania)")
 	addCoinsListEntry(Defaults.DES_GibberBack, Defaults.GibberBackValue, "Gibber (Dementia)")
+	;LEGACY COINS
+	addCoinsListEntry(Defaults.DES_Dram,       Defaults.DramValue)
 	addCoinsListEntry(Defaults.DES_Mede,       Defaults.MedeValue)
 	addCoinsListEntry(Defaults.DES_Sancar,     Defaults.SancarValue)
 	addCoinsListEntry(Defaults.DES_Ulfric,     Defaults.UlfricValue)
@@ -155,7 +155,7 @@ function buildCoinsPage()
 			AddHeaderOption("")	
 			lheader = true			
 		endif
-		if i > 3
+		if i > 5
 			if !rheader
 				SetCursorPosition(r)
 				AddHeaderOption("$COIN_DEPRECATED")
@@ -329,31 +329,6 @@ state Nchuark
 	endEvent
 endState
 
-;--------------------------------------------------
-;LEGACY COINS
-;--------------------------------------------------
-
-state Dram
-	Event OnHighlightST()
-		setInfoText("$DRAM_INFO_TEXT")
-	endEvent
-	Event OnDefaultST()
-		Defaults.DramValue = defaultDramValue
-		SetSliderOptionValueST(defaultDramValue, "$COIN_FORMAT_VALUE")
-	endEvent
-	Event OnSliderOpenST()
-		SetSliderDialogStartValue(Defaults.DramValue)
-		SetSliderDialogDefaultValue(defaultDramValue)
-		SetSliderDialogRange(0.0, maxCoinValue)
-		SetSliderDialogInterval(0.05)
-	endEvent
-	Event OnSliderAcceptST(float value)
-		Defaults.DramValue = value
-		coinValues[4] = value
-		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
-	endEvent
-endState
-
 state GibberMania
 	Event OnHighlightST()
 		setInfoText("$GIBBERMANIA_INFO_TEXT")
@@ -370,7 +345,7 @@ state GibberMania
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.GibberFrontValue = value
-		coinValues[5] = value
+		coinValues[4] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
@@ -391,6 +366,31 @@ state GibberDementia
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.GibberBackValue = value
+		coinValues[5] = value
+		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
+	endEvent
+endState
+
+;--------------------------------------------------
+;LEGACY COINS
+;--------------------------------------------------
+
+state Dram
+	Event OnHighlightST()
+		setInfoText("$DRAM_INFO_TEXT")
+	endEvent
+	Event OnDefaultST()
+		Defaults.DramValue = defaultDramValue
+		SetSliderOptionValueST(defaultDramValue, "$COIN_FORMAT_VALUE")
+	endEvent
+	Event OnSliderOpenST()
+		SetSliderDialogStartValue(Defaults.DramValue)
+		SetSliderDialogDefaultValue(defaultDramValue)
+		SetSliderDialogRange(0.0, maxCoinValue)
+		SetSliderDialogInterval(0.05)
+	endEvent
+	Event OnSliderAcceptST(float value)
+		Defaults.DramValue = value
 		coinValues[6] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
