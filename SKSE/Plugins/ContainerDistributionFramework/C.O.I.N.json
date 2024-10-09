@@ -207,6 +207,8 @@
       "friendlyName" : "C.O.I.N. Reference Exclusions",
       "conditions" : {
         "references" : [
+          //Volunruud Dead Drop
+          "0x4FDAD|Skyrim.esm",
           //Gyldenhul Barrow
           "0x1A3EA|Dragonborn.esm",
           "0x1A3E9|Dragonborn.esm",
