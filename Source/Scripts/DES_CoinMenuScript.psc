@@ -172,7 +172,12 @@ function buildCoinsPage()
 			r += 2
 		endif
 		if(i < Defaults.numDefaultCoins)
-			IF coinForms[i].HasKeyword(DES_NoMCM)
+			bool autoExchange = CoinData.PlayerAlias.autoExchange
+			IF coinForms[i].HasKeyword(DES_NoMCM) && autoExchange
+				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE", OPTION_FLAG_DISABLED)
+			ELSEIF coinStates[i] == "Drakr" && autoExchange && Defaults.DES_DrakrDragon.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrMoth.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrOwl.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrWhale.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrNord.HasKeyword(DES_NoMCM)
+				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE", OPTION_FLAG_DISABLED)
+			ELSEIF !autoExchange
 				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE", OPTION_FLAG_DISABLED)
 			ELSE
 				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")

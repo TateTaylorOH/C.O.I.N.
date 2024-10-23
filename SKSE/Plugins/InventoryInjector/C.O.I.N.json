@@ -15,12 +15,12 @@
             "Update.esm|DE5018",
             "Update.esm|DE5019",
             "Update.esm|DE5020",
-            "Update.esm|DE5021",
             "Update.esm|DE5022",
+            "BSAssets.esm|6028DC",
+            "Update.esm|DE5021",
             "Update.esm|DE5023",
             "Update.esm|DE5024",
-            "Update.esm|DE5029",
-            "BSAssets.esm|6028DC"
+            "Update.esm|DE5029"
           ]
         }
       },
@@ -34,6 +34,17 @@
         "subType": "Gold"
       },
       "assign": {
+        "iconColor": "#FFFFFF",
+        "subTypeDisplay": "$Coin"
+      }
+    },
+    {
+      "match": {
+        "formType": "MiscItem",
+        "formId": "Skyrim.esm|F"
+      },
+      "assign": {
+        "iconColor": "#CCCC33",
         "subTypeDisplay": "$Currency"
       }
     }
