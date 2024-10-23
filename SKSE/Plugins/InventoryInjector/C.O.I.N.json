@@ -34,8 +34,8 @@
         "subType": "Gold"
       },
       "assign": {
-        "iconColor": "#FFFFFF",
-        "subTypeDisplay": "$Coin"
+        "iconColor": "#C68346",
+        "subTypeDisplay": "$DefunctCurrency"
       }
     },
     {
