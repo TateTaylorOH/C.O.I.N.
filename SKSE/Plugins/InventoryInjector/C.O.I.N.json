@@ -44,6 +44,7 @@
         "formId": "Skyrim.esm|F"
       },
       "assign": {
+        "subType": "Gold",
         "iconColor": "#CCCC33",
         "subTypeDisplay": "$Currency"
       }
