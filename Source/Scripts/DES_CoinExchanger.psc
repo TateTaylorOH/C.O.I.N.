@@ -14,6 +14,9 @@ bool property verbose = false auto hidden
 Event OnInit()
 	ref = getReference() as Actor
 	value = 0.0
+	Utility.Wait(3)
+	removeAllInventoryEventFilters()
+	AddInventoryEventFilter(DES_DefaultCoinsList)
 endEvent
 
 Event OnPlayerLoadGame()
