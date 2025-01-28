@@ -17,7 +17,7 @@ function resetCoins()
 	otherCoins = new MiscObject[128]
 	coinMults = new float[128]
 	nextIndex = 0
-	PlayerAlias.removeAllInventoryEventFilters()
+	;PlayerAlias.removeAllInventoryEventFilters()
 	ready = true
 endFunction
 
