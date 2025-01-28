@@ -4,8 +4,10 @@
       "friendlyName" : "Septim to Ancient Nord Drakr",
       "conditions" : {
         "locationKeywords" : [
-          "LocSetNordicRuin",
-          "DLC1VampireCastleDungeonLocation"
+          "LocSetNordicRuin"
+        ],
+        "locations" : [
+          "0x0357E|Dawnguard.esm"
         ],
         "!references" : [
           //Volunruud Dead Drop
@@ -18,6 +20,8 @@
           "0x1A3BA|Dragonborn.esm"
         ],
         "!containers" : [
+          "0x0EBAD8|Skyrim.esm", //Desecrated Imperial
+          "0x0EBE06|Skyrim.esm", //Desecrated Stormcloak
           //Normal Chests and Satchels
           "0x00000E|Skyrim.esm",
           "0x020654|Skyrim.esm",
@@ -289,6 +293,30 @@
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
+          "add" : [
+            "0xDE5019|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5012|Update.esm",
+          "add" : [
+            "0xDE5019|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5013|Update.esm",
+          "add" : [
+            "0xDE5019|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5015|Update.esm",
+          "add" : [
+            "0xDE5019|Update.esm"
+          ]
+        },
+        {
+          "remove" : "0xDE5016|Update.esm",
           "add" : [
             "0xDE5019|Update.esm"
           ]
