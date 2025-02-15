@@ -70,17 +70,13 @@
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
         ],
-        "randomAdd": true,
         "bypassUnsafeContainers": true
       },
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm",
-            "0xDE5013|Update.esm",
-            "0xDE5015|Update.esm",
-            "0xDE5016|Update.esm"
+            "0xDE5012|Update.esm"
           ]
         }
       ]
@@ -91,17 +87,13 @@
         "locations" : [
           "0x0357E|Dawnguard.esm" //Volkihar Ruins
         ],
-        "randomAdd": true,
         "bypassUnsafeContainers": true
       },
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm",
-            "0xDE5013|Update.esm",
-            "0xDE5015|Update.esm",
-            "0xDE5016|Update.esm"
+            "0xDE5012|Update.esm"
           ]
         }
       ]
