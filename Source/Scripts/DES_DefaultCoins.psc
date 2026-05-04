@@ -11,9 +11,6 @@ MiscObject Property DES_DrakrWhale Auto
 MiscObject Property DES_DrakrNord Auto
 float property DrakrValue = 0.15 auto hidden
 
-MiscObject Property DES_Dram Auto
-float property DramValue = 0.30 auto hidden
-
 MiscObject Property DES_GibberFront Auto
 float property GibberFrontValue = 1.6 auto hidden
 
@@ -32,12 +29,6 @@ float property MedeValue = 0.8 auto hidden
 MiscObject Property DES_Nchuark Auto
 float property NchuarkValue = 0.25 auto hidden
 
-MiscObject Property DES_Sancar Auto
-float property SancarValue = 1.25 auto hidden
-
-MiscObject Property DES_Ulfric Auto
-float property UlfricValue  = 0.8 auto hidden
-
 Event OnInit()
 	while (!CoinData.ready)
 		utility.wait(0.1)
@@ -51,13 +42,10 @@ function setDefaultCoinValues()
 	CoinData.setCoinValue(DES_DrakrOwl, DrakrValue)
 	CoinData.setCoinValue(DES_DrakrWhale, DrakrValue)
 	CoinData.setCoinValue(DES_DrakrNord, DrakrValue)
-	CoinData.setCoinValue(DES_Dram, DramValue)
 	CoinData.setCoinValue(DES_GibberFront, GibberFrontValue)
 	CoinData.setCoinValue(DES_GibberBack, GibberBackValue)
 	CoinData.setCoinValue(DES_Mala, MalaValue)
 	CoinData.setCoinValue(DES_Mallari, MallariValue)	
 	CoinData.setCoinValue(DES_Mede, MedeValue)
 	CoinData.setCoinValue(DES_Nchuark, NchuarkValue)
-	CoinData.setCoinValue(DES_Sancar, SancarValue)
-	CoinData.setCoinValue(DES_Ulfric, UlfricValue)
 endFunction
