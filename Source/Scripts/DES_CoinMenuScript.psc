@@ -384,7 +384,7 @@ state Mede
 	endEvent
 	Event OnSliderAcceptST(float value)
 		Defaults.MedeValue = value
-		coinValues[7] = value
+		coinValues[6] = value
 		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
 	endEvent
 endState
