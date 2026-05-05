@@ -19,5 +19,5 @@ $GIBBERMANIA_INFO_TEXT	The currency of Mania.
 $GIBBERDEMENTIA_INFO_TEXT	The currency of Dementia.
 $MEDE_INFO_TEXT	The currency proposed to replace the gold septim.
 
-$Currency	Currency
-$DefunctCurrency	Ancient Currency
+$COINCurrency	Ancient Currency
+$MINTCurrency	Currency
