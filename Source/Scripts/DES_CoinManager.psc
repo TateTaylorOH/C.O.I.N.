@@ -1,6 +1,7 @@
 scriptname DES_CoinManager extends Quest
 
-DES_CoinExchanger Property PlayerAlias Auto
+DES_CoinExchanger property PlayerAlias Auto
+
 bool property ready auto hidden
 
 MiscObject[] otherCoins
@@ -9,6 +10,10 @@ int nextIndex
 
 Event OnInit()
 	ready = false
+	RegisterForSingleUpdate(5)
+endEvent
+
+Event OnUpdate()
 	resetCoins()
 endEvent
 
@@ -17,7 +22,7 @@ function resetCoins()
 	otherCoins = new MiscObject[128]
 	coinMults = new float[128]
 	nextIndex = 0
-	;PlayerAlias.removeAllInventoryEventFilters()
+	PlayerAlias.removeAllInventoryEventFilters()
 	ready = true
 endFunction
 
