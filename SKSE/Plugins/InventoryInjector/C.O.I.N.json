@@ -35,7 +35,7 @@
       },
       "assign": {
         "iconColor": "#C68346",
-        "subTypeDisplay": "$DefunctCurrency"
+        "subTypeDisplay": "$COIN_CURRENCY"
       }
     },
     {
@@ -46,7 +46,7 @@
       "assign": {
         "subType": "Gold",
         "iconColor": "#CCCC33",
-        "subTypeDisplay": "$Currency"
+        "subTypeDisplay": "$MINT_CURRENCY"
       }
     }
   ]
