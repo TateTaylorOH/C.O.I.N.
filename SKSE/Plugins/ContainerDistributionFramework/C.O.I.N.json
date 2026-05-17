@@ -69,7 +69,8 @@
           "0x02C464|Dragonborn.esm",
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
-        ]
+        ],
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
@@ -85,7 +86,8 @@
       "conditions" : {
         "locations" : [
           "0x0357E|Dawnguard.esm" //Volkihar Ruins
-        ]
+        ],
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
@@ -153,7 +155,8 @@
           "0x02C464|Dragonborn.esm",
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
-        ]
+        ],
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
@@ -221,7 +224,8 @@
           "0x02C464|Dragonborn.esm",
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
-        ]
+        ],
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
@@ -292,7 +296,8 @@
           "0x02C464|Dragonborn.esm",
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
-        ]
+        ],
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
@@ -360,7 +365,8 @@
           "0x02C464|Dragonborn.esm",
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
-        ]
+        ],
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
@@ -401,6 +407,7 @@
         "containers" : [
           "0x3079|Update.esm" //Hollowed Stump
         ],
+        "bypassUnsafeContainers": true,
         "randomAdd": true
       },
       "changes":[
