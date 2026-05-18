@@ -171,7 +171,7 @@
       "friendlyName" : "Septim to Ancient Falmer Mallari",
       "conditions" : {
         "locationKeywords" : [
-          "LocTypeAncientFalmerRuins"
+          "LocTypeAncientFalmerRuin"
         ],
         "locations" : [
           "0x162B0|Dawnguard.esm", //Darkfall Grotto
