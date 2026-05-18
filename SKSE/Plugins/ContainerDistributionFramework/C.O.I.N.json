@@ -1,7 +1,7 @@
 {
   "rules" : [
     {
-      "friendlyName" : "Septim to Drakr",
+      "friendlyName" : "Swap Septims to Drakr in Ancient Nord Ruins",
       "conditions" : {
         "locationKeywords" : [
           "LocSetNordicRuin"
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Drakr in Volkihar Ruins",
+      "friendlyName" : "Swap Septims to Drakr in Volkihar Ruins",
       "conditions" : {
         "locations" : [
           "0x0357E|Dawnguard.esm" //Volkihar Ruins
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Nchuark",
+      "friendlyName" : "Swap Septims to Nchuarks in Dwarven Ruins",
       "conditions" : {
         "locationKeywords" : [
           "LocSetDwarvenRuin"
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Mallari",
+      "friendlyName" : "Swap Septims to Mallari in Ancient Falmer Ruins",
       "conditions" : {
         "locationKeywords" : [
           "LocTypeAncientFalmerRuin"
@@ -237,7 +237,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Mallari in the Forgotten Vale",
+      "friendlyName" : "Swap Septims to Mallari in the Forgotten Vale",
       "conditions" : {
         "locations" : [
           "0x162B0|Dawnguard.esm", //Darkfall Grotto
@@ -309,7 +309,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Mala",
+      "friendlyName" : "Swap Septims to Malas in Ayleid Ruins",
       "conditions" : {
         "locationKeywords" : [
           "ccBGSSSE067_LocTypeAyleidRuin"
@@ -378,7 +378,7 @@
       ]
     },
     {
-      "friendlyName" : "Septim to Gibber",
+      "friendlyName" : "Swap Septims to Gibbers in Hollowed Stumps",
       "conditions" : {
         "containers" : [
           "0x3079|Update.esm" //Hollowed Stump
