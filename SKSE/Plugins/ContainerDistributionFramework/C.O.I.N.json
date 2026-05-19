@@ -98,8 +98,6 @@
           "0x1A3BA|Dragonborn.esm"
         ],
         "!containers" : [
-          "0x0EBAD8|Skyrim.esm", //Desecrated Imperial
-          "0x0EBE06|Skyrim.esm", //Desecrated Stormcloak
           //Normal Chests and Satchels
           "0x00000E|Skyrim.esm",
           "0x020654|Skyrim.esm",
