@@ -614,13 +614,13 @@
           ]
         },
         {
-          "remove" : "0xDE5015|Update.esm",
+          "remove" : "0xDE5014|Update.esm",
           "add" : [
             "0xDE5019|Update.esm"
           ]
         },
         {
-          "remove" : "0xDE5016|Update.esm",
+          "remove" : "0xDE5015|Update.esm",
           "add" : [
             "0xDE5019|Update.esm"
           ]

@@ -5,16 +5,12 @@ DES_DefaultCoins Property Defaults Auto
 
 keyword property DES_NoMCM auto
 
-;RUIN COINS
 float defaultMallariValue   = 0.6
 float defaultDrakrValue     = 0.15
 float defaultMalaValue      = 0.4
 float defaultNchuarkValue   = 0.25
 float defaultGibberMania    = 1.6
 float defaultGibberDementia = 1.0
-
-;LEGACY COINS
-float defaultMedeValue      = 0.8
 
 bool autoExchangeDefault = true
 bool verboseDefault = false
@@ -58,21 +54,17 @@ function initializeNewCoins()
 	Defaults.NchuarkValue     = defaultNchuarkValue
 	Defaults.GibberFrontValue = defaultGibberMania
 	Defaults.GibberBackValue  = defaultGibberDementia
-	Defaults.MedeValue        = defaultMedeValue
 	while (!CoinData.ready)
 		utility.wait(0.1)
 	endWhile
 	Defaults.setDefaultCoinValues()
 	coinStates = new String[10]
-	;RUIN COINS
 	coinStates[0] = "Mallari"
 	coinStates[1] = "Drakr"
 	coinStates[2] = "Mala"
 	coinStates[3] = "Nchuark"
 	coinStates[4] = "GibberMania"
 	coinStates[5] = "GibberDementia"
-	;LEGACY COINS
-	coinStates[6] = "Mede"
 endFunction
 
 function buildSettingsPage()
@@ -99,79 +91,51 @@ int function addCoinsListEntry(MiscObject coin, float value = -1.0, string name 
 endFunction
 
 int function buildCoinsList()
-	int numDrakrAlts = 4 ; 5 drakrs share one entry
+	int numDrakrAlts = 3 ; 4 drakrs share one entry
 	currentIndex = 0
 	int numCoins = CoinData.getNumCoins() - numDrakrAlts
 	coinForms = Utility.createFormArray(numCoins)
 	coinNames = Utility.createStringArray(numCoins)
 	coinValues = Utility.createFloatArray(numCoins)
-	;RUIN COINS
 	addCoinsListEntry(Defaults.DES_Mallari,    Defaults.MallariValue)
 	addCoinsListEntry(None,                    Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
 	addCoinsListEntry(Defaults.DES_Mala,       Defaults.MalaValue)
 	addCoinsListEntry(Defaults.DES_Nchuark,    Defaults.NchuarkValue)
 	addCoinsListEntry(Defaults.DES_GibberFront,Defaults.GibberFrontValue, "Gibber (Mania)")
 	addCoinsListEntry(Defaults.DES_GibberBack, Defaults.GibberBackValue, "Gibber (Dementia)")
-	;LEGACY COINS
-	addCoinsListEntry(Defaults.DES_Mede,       Defaults.MedeValue)
-;	int i = 0
-;	while(i < coinsMaxIndex && currentIndex < numCoins)
-;		MiscObject coin = CoinData.getCoin(i)
-;		string coinName = coin.getName()
-;		if(coinNames.find(coinName) < 0)
-;			addCoinsListEntry(coin, name = coinName)
-;		endIf
-;		i += 1
-;	endWhile
+	int i = 0
+	while(i < coinsMaxIndex && currentIndex < numCoins)
+		MiscObject coin = CoinData.getCoin(i)
+		string coinName = coin.getName()
+		if(coinNames.find(coinName) < 0)
+			addCoinsListEntry(coin, name = coinName)
+		endIf
+		i += 1
+	endWhile
 	return CoinData.getNumCoins()
 endFunction
 
 function buildCoinsPage()
-	;if(CoinData.getNumCoins() > coinsMaxIndex) ; rebuild coin arrays if they're out of date
+	if(CoinData.getNumCoins() > coinsMaxIndex) ; rebuild coin arrays if they're out of date
 		coinsMaxIndex = buildCoinsList()
-	;endIf
+	endIf
 	setCursorFillMode(TOP_TO_BOTTOM)
 	int i = 0
-	int r = 1
-	bool lheader = false
-	bool rheader = false
 	int numCoins = coinNames.length
 	while(i < numCoins)
-		if !lheader
-			AddHeaderOption("$COIN_ACTIVE")
-			AddTextOption("$COIN_ACTIVE_SUPPORT", "", OPTION_FLAG_DISABLED)	
-			AddHeaderOption("")	
-			lheader = true			
-		endif
-		if i > 5
-			if !rheader
-				SetCursorPosition(r)
-				AddHeaderOption("$COIN_DEPRECATED")
-				r += 2
-				SetCursorPosition(r)
-				AddTextOption("$COIN_LEGACY_SUPPORT", "", OPTION_FLAG_DISABLED)
-				r += 2
-				SetCursorPosition(r)
-				AddHeaderOption("")
-				r += 2				
-				rheader = true
-			endif
-			SetCursorPosition(r)
-			r += 2
-		endif
 		if(i < Defaults.numDefaultCoins)
 			bool autoExchange = CoinData.PlayerAlias.autoExchange
 			IF coinForms[i].HasKeyword(DES_NoMCM) && autoExchange
 				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE", OPTION_FLAG_DISABLED)
-			ELSEIF coinStates[i] == "Drakr" && autoExchange && Defaults.DES_DrakrDragon.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrMoth.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrOwl.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrWhale.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrNord.HasKeyword(DES_NoMCM)
+			ELSEIF coinStates[i] == "Drakr" && autoExchange && Defaults.DES_DrakrDragon.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrMoth.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrOwl.HasKeyword(DES_NoMCM) && Defaults.DES_DrakrWhale.HasKeyword(DES_NoMCM)
 				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE", OPTION_FLAG_DISABLED)
 			ELSEIF !autoExchange
 				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE", OPTION_FLAG_DISABLED)
 			ELSE
 				AddSliderOptionST(coinStates[i], coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
 			ENDIF
-;		else; non default coins are handled by index instead of name
-;			AddSliderOption(coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
+		else; non default coins are handled by index instead of name
+			AddSliderOption(coinNames[i], coinValues[i], "$COIN_FORMAT_VALUE")
 		endIf
 		i += 1
 	endWhile
@@ -233,10 +197,6 @@ state toggleVerboseExchange
 		SetToggleOptionValueST(verbose)
 	endEvent
 endState
-
-;--------------------------------------------------
-;RUIN COINS
-;--------------------------------------------------
 
 state Mallari
 	Event OnHighlightST()
@@ -364,45 +324,20 @@ state GibberDementia
 	endEvent
 endState
 
-;--------------------------------------------------
-;LEGACY COINS
-;--------------------------------------------------
+Event OnOptionSliderOpen(int option)
+	int index = option/2
+	float value = coinValues[index]
+	SetSliderDialogStartValue(value)
+	SetSliderDialogDefaultValue(value)
+	SetSliderDialogRange(0.0, maxCoinValue)
+	SetSliderDialogInterval(0.05)
+endEvent
 
-state Mede
-	Event OnHighlightST()
-		setInfoText("$MEDE_INFO_TEXT")
-	endEvent
-	Event OnDefaultST()
-		Defaults.MedeValue = defaultMedeValue
-		SetSliderOptionValueST(defaultMedeValue, "$COIN_FORMAT_VALUE")
-	endEvent
-	Event OnSliderOpenST()
-		SetSliderDialogStartValue(Defaults.MedeValue)
-		SetSliderDialogDefaultValue(defaultMedeValue)
-		SetSliderDialogRange(0.0, maxCoinValue)
-		SetSliderDialogInterval(0.05)
-	endEvent
-	Event OnSliderAcceptST(float value)
-		Defaults.MedeValue = value
-		coinValues[6] = value
-		SetSliderOptionValueST(value, "$COIN_FORMAT_VALUE")
-	endEvent
-endState
-
-;Event OnOptionSliderOpen(int option)
-;	int index = option/2
-;	float value = coinValues[index]
-;	SetSliderDialogStartValue(value)
-;	SetSliderDialogDefaultValue(value)
-;	SetSliderDialogRange(0.0, maxCoinValue)
-;	SetSliderDialogInterval(0.05)
-;endEvent
-;
-;Event OnOptionSliderAccept(int option, float value)
-;	int index = option/2
-;	coinValues[index] = value
-;	SetSliderOptionValue(option, value, "$COIN_FORMAT_VALUE")
-;endEvent
+Event OnOptionSliderAccept(int option, float value)
+	int index = option/2
+	coinValues[index] = value
+	SetSliderOptionValue(option, value, "$COIN_FORMAT_VALUE")
+endEvent
 
 ;state TemplateStateCloneMe
 ;	Event onHighlightST() ; text, toggles, sliders, menus, colors, keymaps, inputs

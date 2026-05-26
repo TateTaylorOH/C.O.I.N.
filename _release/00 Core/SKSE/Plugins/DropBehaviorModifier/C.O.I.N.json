@@ -1,0 +1,33 @@
+{
+  "MinimumVersion": 1,
+  "Swaps": [
+    {
+      "BaseObject": [
+        "Skyrim.esm|0xF",
+        "Update.esm|0xDE5012",
+        "Update.esm|0xDE5013",
+        "Update.esm|0xDE5014",
+        "Update.esm|0xDE5015",
+        "Update.esm|0xDE5017",
+        "Update.esm|0xDE5018",
+        "Update.esm|0xDE5019",
+        "Update.esm|0xDE5020",
+        "Update.esm|0xDE5022"
+      ],
+      "AltModels": [
+        {
+          "Count": 2,
+          "Model": "plants\\coinbagsmall.nif"
+        },
+        {
+          "Count": 100,
+          "Model": "plants\\coinbagmed.nif"
+        },
+        {
+          "Count": 500,
+          "Model": "plants\\coinbaglarge.nif"
+        }
+      ]
+    }
+  ]
+}
