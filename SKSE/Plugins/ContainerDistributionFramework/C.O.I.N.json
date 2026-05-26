@@ -70,17 +70,13 @@
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
         ],
-        "bypassUnsafeContainers": true,
-        "randomAdd": true
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm",
-            "0xDE5013|Update.esm",
-            "0xDE5014|Update.esm",
-            "0xDE5015|Update.esm"
+            "0xDE5016|Update.esm"
           ]
         }
       ]
@@ -143,17 +139,13 @@
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
         ],
-        "bypassUnsafeContainers": true,
-        "randomAdd": true
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm",
-            "0xDE5013|Update.esm",
-            "0xDE5014|Update.esm",
-            "0xDE5015|Update.esm"
+            "0xDE5016|Update.esm"
           ]
         }
       ]
@@ -216,17 +208,13 @@
           "0x034B39|Dragonborn.esm",
           "0x035E25|Dragonborn.esm"
         ],
-        "bypassUnsafeContainers": true,
-        "randomAdd": true
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm",
-            "0xDE5013|Update.esm",
-            "0xDE5014|Update.esm",
-            "0xDE5015|Update.esm"
+            "0xDE5016|Update.esm"
           ]
         }
       ]
@@ -237,17 +225,13 @@
         "locations" : [
           "0x0357E|Dawnguard.esm" //Volkihar Ruins
         ],
-        "bypassUnsafeContainers": true,
-        "randomAdd": true
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm",
-            "0xDE5013|Update.esm",
-            "0xDE5014|Update.esm",
-            "0xDE5015|Update.esm"            
+            "0xDE5016|Update.esm"       
           ]
         }
       ]
@@ -255,20 +239,13 @@
     {
       "friendlyName" : "Randomize Leveled Drakr",
       "conditions" : {
-        "locations" : [
-          "0x0357E|Dawnguard.esm" //Volkihar Ruins
-        ],
-        "bypassUnsafeContainers": true,
-        "randomAdd": true
+        "bypassUnsafeContainers": true
       },
       "changes":[
         {
-          "remove" : "0xDE5012|Update.esm",
+          "remove" : "01DE5012|Update.esm",
           "add" : [
-            "0xDE5012|Update.esm",
-            "0xDE5013|Update.esm",
-            "0xDE5014|Update.esm",
-            "0xDE5015|Update.esm"            
+            "0xDE5016|Update.esm"       
           ]
         }
       ]
