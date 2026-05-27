@@ -5,10 +5,10 @@ DES_DefaultCoins Property Defaults Auto
 
 keyword property DES_NoMCM auto
 
-float defaultMallariValue   = 0.6
-float defaultDrakrValue     = 0.15
-float defaultMalaValue      = 0.4
-float defaultNchuarkValue   = 0.25
+float defaultMallariValue	= 0.6
+float defaultDrakrValue		= 0.15
+float defaultMalaValue		= 0.4
+float defaultNchuarkValue	= 0.25
 float defaultGibberMania    = 1.6
 float defaultGibberDementia = 1.0
 
@@ -48,17 +48,17 @@ function initializeSettingDefaults()
 endFunction
 
 function initializeNewCoins()
-	Defaults.MallariValue     = defaultMallariValue
-	Defaults.DrakrValue       = defaultDrakrValue
-	Defaults.MalaValue        = defaultMalaValue
-	Defaults.NchuarkValue     = defaultNchuarkValue
-	Defaults.GibberFrontValue = defaultGibberMania
-	Defaults.GibberBackValue  = defaultGibberDementia
+	Defaults.MallariValue		= defaultMallariValue
+	Defaults.DrakrValue			= defaultDrakrValue
+	Defaults.MalaValue			= defaultMalaValue
+	Defaults.NchuarkValue		= defaultNchuarkValue
+	Defaults.GibberFrontValue	= defaultGibberMania
+	Defaults.GibberBackValue	= defaultGibberDementia
 	while (!CoinData.ready)
 		utility.wait(0.1)
 	endWhile
 	Defaults.setDefaultCoinValues()
-	coinStates = new String[10]
+	coinStates = new String[6]
 	coinStates[0] = "Mallari"
 	coinStates[1] = "Drakr"
 	coinStates[2] = "Mala"
@@ -97,12 +97,12 @@ int function buildCoinsList()
 	coinForms = Utility.createFormArray(numCoins)
 	coinNames = Utility.createStringArray(numCoins)
 	coinValues = Utility.createFloatArray(numCoins)
-	addCoinsListEntry(Defaults.DES_Mallari,    Defaults.MallariValue)
-	addCoinsListEntry(None,                    Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
-	addCoinsListEntry(Defaults.DES_Mala,       Defaults.MalaValue)
-	addCoinsListEntry(Defaults.DES_Nchuark,    Defaults.NchuarkValue)
-	addCoinsListEntry(Defaults.DES_GibberFront,Defaults.GibberFrontValue, "Gibber (Mania)")
-	addCoinsListEntry(Defaults.DES_GibberBack, Defaults.GibberBackValue, "Gibber (Dementia)")
+	addCoinsListEntry(Defaults.DES_Mallari,    	Defaults.MallariValue)
+	addCoinsListEntry(None, 					Defaults.DrakrValue, Defaults.DES_DrakrDragon.getName())
+	addCoinsListEntry(Defaults.DES_Mala, 		Defaults.MalaValue)
+	addCoinsListEntry(Defaults.DES_Nchuark, 	Defaults.NchuarkValue)
+	addCoinsListEntry(Defaults.DES_GibberFront, Defaults.GibberFrontValue, "Gibber (Mania)")
+	addCoinsListEntry(Defaults.DES_GibberBack, 	Defaults.GibberBackValue, "Gibber (Dementia)")
 	int i = 0
 	while(i < coinsMaxIndex && currentIndex < numCoins)
 		MiscObject coin = CoinData.getCoin(i)

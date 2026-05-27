@@ -76,7 +76,7 @@
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm"
+            "0xDE5016|Update.esm"
           ]
         }
       ]
@@ -145,7 +145,7 @@
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm"
+            "0xDE5016|Update.esm"
           ]
         }
       ]
@@ -214,7 +214,7 @@
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm"
+            "0xDE5016|Update.esm"
           ]
         }
       ]
@@ -231,7 +231,21 @@
         {
           "remove" : "0xF|Skyrim.esm",
           "add" : [
-            "0xDE5012|Update.esm"
+            "0xDE5016|Update.esm"       
+          ]
+        }
+      ]
+    },
+    {
+      "friendlyName" : "Randomize Leveled Drakr",
+      "conditions" : {
+        "bypassUnsafeContainers": true
+      },
+      "changes":[
+        {
+          "remove" : "01DE5012|Update.esm",
+          "add" : [
+            "0xDE5016|Update.esm"       
           ]
         }
       ]
